@@ -1,0 +1,490 @@
+# depslib dependency file v1.0
+1413999888 source:/home/william/Documents/C++ Projects/HelloWorld/main.cpp
+	"Framework.h"
+	"Scenes.h"
+	"Music.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Framework.h
+	"TimeoutListener.h"
+	"Framework_Main.h"
+	"Renderer.h"
+	"Behaviour.h"
+	"XMLFile.h"
+	"Behaviour.h"
+	"Music.h"
+	"Bank.h"
+	"Actor.h"
+	"Game.h"
+	<algorithm>
+	<iostream>
+	<string>
+
+1413516656 /home/william/Documents/C++ Projects/HelloWorld/TimeoutListener.h
+	"Framework.h"
+	"IHandler.h"
+	"highPrecisionTimer.h"
+	"ICollidable.h"
+	"IListener.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/IHandler.h
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/highPrecisionTimer.h
+	"Framework_Main.h"
+
+1413999943 /home/william/Documents/C++ Projects/HelloWorld/Framework_Main.h
+	<Windows.h>
+	"SDL2/SDL.h"
+	"SDL2\SDL_net.h"
+	"SDL2/SDL_mixer.h"
+	"SDL2/SDL_ttf.h"
+	"SDL2/SDL_Image.h"
+	"TinyXml2.h"
+	<iostream>
+	<time.h>
+	<vector>
+	<string>
+	"SDL2/SDL.h"
+	"SDL2/SDL_ttf.h"
+	"SDL2/SDL_mixer.h"
+	"SDL2/SDL_image.h"
+	"SDL2/SDL_net.h"
+	"tinyxml2.h"
+	<unistd.h>
+	<iostream>
+	<time.h>
+	<vector>
+	<string>
+	"Exception.h"
+	"tinyxml2.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Exception.h
+	<exception>
+	<string>
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/tinyxml2.h
+	<ctype.h>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	<cctype>
+	<climits>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<cstdarg>
+	<android/log.h>
+	<assert.h>
+
+1414000075 /home/william/Documents/C++ Projects/HelloWorld/ICollidable.h
+	"Framework_Main.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/IListener.h
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Renderer.h
+	"Framework_Main.h"
+	"Texture.h"
+	"Button.h"
+	"Label.h"
+	"Window.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Texture.h
+	"TextureManager.h"
+	"Framework_Main.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/TextureManager.h
+	"Framework_Main.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Button.h
+	"Texture.h"
+	"ButtonListener.h"
+	"Label.h"
+
+1413516656 /home/william/Documents/C++ Projects/HelloWorld/ButtonListener.h
+	"Framework_Main.h"
+	"IListener.h"
+	"IClickable.h"
+	"IHandler.h"
+
+1414000116 /home/william/Documents/C++ Projects/HelloWorld/IClickable.h
+	"Framework_Main.h"
+
+1413514270 /home/william/Documents/C++ Projects/HelloWorld/Label.h
+	"Framework_Main.h"
+	"LabelManager.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/LabelManager.h
+	"Framework_Main.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Window.h
+	"Framework_Main.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Behaviour.h
+	"Framework_Main.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/XMLFile.h
+	"Framework_Main.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Music.h
+	"Framework_Main.h"
+
+1413514403 /home/william/Documents/C++ Projects/HelloWorld/Bank.h
+	"Framework_Main.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Actor.h
+	"Framework_Main.h"
+	"Behaviour.h"
+
+1414002968 /home/william/Documents/C++ Projects/HelloWorld/Game.h
+	"ExternalLibraries.h"
+	"Framework_Main.h"
+	"EventManager.h"
+	"SceneManager.h"
+	"Renderer.h"
+	"Bank.h"
+	"Window.h"
+
+1413516656 /home/william/Documents/C++ Projects/HelloWorld/ExternalLibrarys.h
+	"Framework_Main.h"
+
+1413516656 /home/william/Documents/C++ Projects/HelloWorld/EventManager.h
+	"Framework_Main.h"
+	"IListener.h"
+	"IHandler.h"
+
+1413509272 /home/william/Documents/C++ Projects/HelloWorld/SceneManager.h
+	"Renderer.h"
+
+1414003080 /home/william/Documents/C++ Projects/HelloWorld/Scenes.h
+	"OnlinePlayerMap.h"
+	"TwoPlayerMap.h"
+	"OnePlayerMap.h"
+	"Multiplayer.h"
+	"Statistics.h"
+	"Gameover.h"
+	"Controls.h"
+	"About.h"
+	"Menu.h"
+
+1413510884 /home/william/Documents/C++ Projects/HelloWorld/OnlinePlayerMap.h
+	"Framework.h"
+	"Resources.h"
+	"Networking.h"
+	"Ball.h"
+	"Player.h"
+	"Hud.h"
+
+1413514697 /home/william/Documents/C++ Projects/HelloWorld/Resources.h
+	"Framework.h"
+	<vector>
+	<string>
+
+1414000203 /home/william/Documents/C++ Projects/HelloWorld/Networking.h
+	"Client.h"
+	"Packet.h"
+	"Server.h"
+	<sstream>
+	<string>
+
+1413510884 /home/william/Documents/C++ Projects/HelloWorld/Client.h
+	"Framework_Main.h"
+	"Packet.h"
+
+1412758528 /home/william/Documents/C++ Projects/HelloWorld/Packet.h
+	"Framework_Main.h"
+
+1413510884 /home/william/Documents/C++ Projects/HelloWorld/Server.h
+	"Framework_Main.h"
+	"Packet.h"
+
+1413517223 /home/william/Documents/C++ Projects/HelloWorld/Ball.h
+	"CollisionListener.h"
+	"BlockCollision.h"
+	"BallBehaviour.h"
+	"Resources.h"
+	"Framework.h"
+	"Player.h"
+
+1413516656 /home/william/Documents/C++ Projects/HelloWorld/CollisionListener.h
+	"Framework.h"
+	"IHandler.h"
+	"ICollidable.h"
+	"IListener.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/BlockCollision.h
+	"CollisionListener.h"
+	"Framework.h"
+	"Player.h"
+	"Ball.h"
+
+1412784804 /home/william/Documents/C++ Projects/HelloWorld/Player.h
+	"CollisionListener.h"
+	"ICollidable.h"
+	"PlayerBehavior.h"
+	"Resources.h"
+	"Framework.h"
+	"Screen.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/PlayerBehavior.h
+	"Framework.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Screen.h
+	"EventManager.h"
+	"ICollidable.h"
+
+1413517053 /home/william/Documents/C++ Projects/HelloWorld/BallBehaviour.h
+	"Framework.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Hud.h
+	"Framework.h"
+	"Resources.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/TwoPlayerMap.h
+	"Framework.h"
+	"Resources.h"
+	"Ball.h"
+	"Player.h"
+	"Hud.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/OnePlayerMap.h
+	"Framework.h"
+	"Resources.h"
+	"Ball.h"
+	"Player.h"
+	"Hud.h"
+
+1413509614 /home/william/Documents/C++ Projects/HelloWorld/Multiplayer.h
+	"Framework.h"
+	"Resources.h"
+	"Player.h"
+	"Music.h"
+	"Ball.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Statistics.h
+	"Framework.h"
+	"Resources.h"
+	"Player.h"
+	"Ball.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Gameover.h
+	"Framework.h"
+	"Resources.h"
+	"Player.h"
+	"Ball.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Controls.h
+	"Framework.h"
+	"Resources.h"
+	"Player.h"
+	"Music.h"
+	"Ball.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/About.h
+	"Framework.h"
+	"Resources.h"
+	"Paragraph.h"
+	"Player.h"
+	"Ball.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/Paragraph.h
+	"Framework.h"
+	"Resources.h"
+	"Renderer.h"
+	"XMLFile.h"
+	"Label.h"
+
+1413506960 /home/william/Documents/C++ Projects/HelloWorld/Menu.h
+	"Framework.h"
+	"Resources.h"
+	"Player.h"
+	"Music.h"
+	"Ball.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/About.cpp
+	"Scenes.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/Actor.cpp
+	"Actor.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/AiBehaviour.cpp
+	"AiBehaviour.h"
+	"Player.h"
+	"Ball.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/AiBehaviour.h
+	"Framework.h"
+
+1413517248 source:/home/william/Documents/C++ Projects/HelloWorld/Ball.cpp
+	"ScreenCollision.h"
+	"Ball.h"
+	"Screen.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/ScreenCollision.h
+	"CollisionListener.h"
+	"Framework.h"
+	"Player.h"
+	"Ball.h"
+
+1413517116 source:/home/william/Documents/C++ Projects/HelloWorld/BallBehaviour.cpp
+	"BallBehaviour.h"
+	"Ball.h"
+
+1413514046 source:/home/william/Documents/C++ Projects/HelloWorld/Bank.cpp
+	"Bank.h"
+
+1412791410 source:/home/william/Documents/C++ Projects/HelloWorld/BlockCollision.cpp
+	"BlockCollision.h"
+	"Hud.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/Button.cpp
+	"Button.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/ButtonListener.cpp
+	"ButtonListener.h"
+
+1413510640 source:/home/william/Documents/C++ Projects/HelloWorld/Client.cpp
+	"Client.h"
+
+1413516016 source:/home/william/Documents/C++ Projects/HelloWorld/CollisionListener.cpp
+	"CollisionListener.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/Controls.cpp
+	"Controls.h"
+	"Scenes.h"
+
+1413516656 source:/home/william/Documents/C++ Projects/HelloWorld/EventManager.cpp
+	"EventManager.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/Exception.cpp
+	"Exception.h"
+
+1413516656 source:/home/william/Documents/C++ Projects/HelloWorld/ExternalLibrarys.cpp
+	"ExternalLibrarys.h"
+
+1412763965 source:/home/william/Documents/C++ Projects/HelloWorld/Game.cpp
+	"highPrecisionTimer.h"
+	"Texture.h"
+	"Game.h"
+	<iostream>
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/Gameover.cpp
+	"Gameover.h"
+	"Scenes.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/highPrecisionTimer.cpp
+	"highPrecisionTimer.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/Hud.cpp
+	"Hud.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/Label.cpp
+	"Label.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/LabelManager.cpp
+	"LabelManager.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/lowPrecisionTimer.cpp
+	"lowPrecisionTimer.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/lowPrecisionTimer.h
+	"Framework_Main.h"
+
+1414003081 source:/home/william/Documents/C++ Projects/HelloWorld/Menu.cpp
+	"Scenes.h"
+	"Menu.h"
+
+1413527964 source:/home/william/Documents/C++ Projects/HelloWorld/Multiplayer.cpp
+	"Multiplayer.h"
+	"Networking.h"
+	"Scenes.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/Music.cpp
+	"Music.h"
+
+1414000240 source:/home/william/Documents/C++ Projects/HelloWorld/Networking.cpp
+	"Networking.h"
+
+1413515330 source:/home/william/Documents/C++ Projects/HelloWorld/OnePlayerMap.cpp
+	"Scenes.h"
+	"OnePlayerMap.h"
+	"AiBehaviour.h"
+
+1414000262 source:/home/william/Documents/C++ Projects/HelloWorld/OnlinePlayerMap.cpp
+	"Scenes.h"
+	"OnlinePlayerMap.h"
+
+1413999440 source:/home/william/Documents/C++ Projects/HelloWorld/Packet.cpp
+	"Packet.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/Paragraph.cpp
+	"Paragraph.h"
+
+1412789047 source:/home/william/Documents/C++ Projects/HelloWorld/Player.cpp
+	"EventManager.h"
+	"Player.h"
+
+1412775662 source:/home/william/Documents/C++ Projects/HelloWorld/PlayerBehavior.cpp
+	"PlayerBehavior.h"
+	"Player.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/Renderer.cpp
+	"Renderer.h"
+
+1412764031 source:/home/william/Documents/C++ Projects/HelloWorld/Resources.cpp
+	"Resources.h"
+
+1413508141 source:/home/william/Documents/C++ Projects/HelloWorld/SceneManager.cpp
+	"SceneManager.h"
+
+1412790916 source:/home/william/Documents/C++ Projects/HelloWorld/ScreenCollision.cpp
+	"ScreenCollision.h"
+	"GameOverEvent.h"
+	"Scenes.h"
+	"Hud.h"
+
+1411556704 /home/william/Documents/C++ Projects/HelloWorld/GameOverEvent.h
+	"Framework.h"
+	"Hud.h"
+	"Player.h"
+
+1413510446 source:/home/william/Documents/C++ Projects/HelloWorld/Server.cpp
+	"Server.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/Statistics.cpp
+	"Scenes.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/Texture.cpp
+	"Renderer.h"
+	"Texture.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/TextureManager.cpp
+	"TextureManager.h"
+	"Renderer.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/TImeoutListener.cpp
+	"TimeoutListener.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/tinyxml2.cpp
+	"tinyxml2.h"
+	<new>
+	<stddef.h>
+	<cstddef>
+
+1413515358 source:/home/william/Documents/C++ Projects/HelloWorld/TwoPlayerMap.cpp
+	"Scenes.h"
+	"TwoPlayerMap.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/Window.cpp
+	"Window.h"
+
+1411556704 source:/home/william/Documents/C++ Projects/HelloWorld/XMLFile.cpp
+	"XMLFile.h"
+	"Exception.h"
+
+1414001129 source:/home/william/Documents/C++ Projects/HelloWorld/ExternalLibraries.cpp
+	"ExternalLibraries.h"
+
+1414001090 /home/william/Documents/C++ Projects/HelloWorld/ExternalLibraries.h
+	"Framework_Main.h"
+

@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Framework\Loading">
+      <UniqueIdentifier>{29af9675-64f2-4c82-9a62-b006483d5297}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Loading\Asset">
+      <UniqueIdentifier>{e8ac7a8d-6492-4a20-a411-f318e7a7ec2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Loading\Asset\Texture">
+      <UniqueIdentifier>{99e0c010-fde7-43e4-89cc-7afddf527343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Loading\Asset\Font">
+      <UniqueIdentifier>{847b3a85-07ff-4c36-b442-b53fefd0c3ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Loading\Asset\Model">
+      <UniqueIdentifier>{fa74a47a-31cd-4bab-9093-6058bc989560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Loading\Local">
+      <UniqueIdentifier>{b08d6164-7344-4b7b-98dc-876ecbe440d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics">
+      <UniqueIdentifier>{d0cbba92-2c54-4585-a034-2b2bd89b1dd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\LLGI">
+      <UniqueIdentifier>{ad95fa91-45cb-4c93-8db8-8bc5d785ecae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\LLGI\Sampler">
+      <UniqueIdentifier>{a6386ba1-7153-4598-bdf1-9507c537f58c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\LLGI\Program">
+      <UniqueIdentifier>{c9cb9a28-e384-4677-8b3a-d295ee8f94c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\LLGI\Transfer">
+      <UniqueIdentifier>{82b598b9-a9a7-48e7-a8d5-c299731914b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\LLGI\Geometry Buffer">
+      <UniqueIdentifier>{03cd0a5b-4172-44dc-a814-17ce1cb339ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI">
+      <UniqueIdentifier>{28c5ddba-a26f-4da5-9900-4780563c54dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Actors">
+      <UniqueIdentifier>{eed842c1-460e-4a4a-b906-5b02156f3a09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Actors\Cube">
+      <UniqueIdentifier>{1dc89b11-3db9-4d53-bc3a-51f842ad8790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Actors\Heightmap">
+      <UniqueIdentifier>{c00e785d-cf52-401f-aac1-45e51ec26436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Actors\Model">
+      <UniqueIdentifier>{50ca072f-c9d0-43f7-b39d-f1221be2e498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Actors\Skybox">
+      <UniqueIdentifier>{fceaa23d-b586-4345-883e-170fb14256f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Actors\Text">
+      <UniqueIdentifier>{8a85e375-7894-4e86-8759-ba7eb7e8fc46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Actors\Texture">
+      <UniqueIdentifier>{0c399812-1a13-4d18-979d-3838f18f1554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Actors\Button">
+      <UniqueIdentifier>{d4fc7864-b1c7-4ba7-9dfd-483decb8fd0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Shaders">
+      <UniqueIdentifier>{9f01c2d6-c295-4cff-9f8c-eeac2342a5fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Shaders\Deferred Input">
+      <UniqueIdentifier>{ae58ac06-118a-4b03-a6e7-306f83b0b3ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Shaders\Deferred Output">
+      <UniqueIdentifier>{75c31d2d-072b-4df1-a19b-898230c054e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Shaders\Orthographic">
+      <UniqueIdentifier>{85d25da7-581e-4464-ae83-07c3391d8bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Camera">
+      <UniqueIdentifier>{e22514a6-45d2-4d8e-be4f-e5e4a4a143ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Camera\First Person">
+      <UniqueIdentifier>{4b979415-6b4c-4aa0-85b1-e474b95af545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Camera\Deafult Camera">
+      <UniqueIdentifier>{d106fe7b-11cf-46eb-a153-b6fe0b45d6a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\System">
+      <UniqueIdentifier>{0ee160c4-4951-4570-8890-c4881349954b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\System\Window">
+      <UniqueIdentifier>{5c6610f2-507d-4827-97de-76aef546a7e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Utilities">
+      <UniqueIdentifier>{521d23e9-a979-4dab-b8da-5e1668b93b49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Utilities\Exception">
+      <UniqueIdentifier>{b8e1fedc-d3b9-4d7a-9544-419486ca8875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Utilities\Timer">
+      <UniqueIdentifier>{89ad58f0-ee07-43f7-b1b2-14ab3b0a4502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Utilities\Scenes">
+      <UniqueIdentifier>{ba29ef49-bff1-4528-b3f0-9990eaa77d40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\menu">
+      <UniqueIdentifier>{24bedf0a-b846-4414-976b-cd18a5f12c14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\level">
+      <UniqueIdentifier>{75b2ee07-4ef8-4ab6-821b-5196ddaf3d19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Renderers">
+      <UniqueIdentifier>{76179baf-a468-4af4-8ebd-6dc2e16114a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Renderers\Deferred">
+      <UniqueIdentifier>{3f3a9507-2396-4742-8bb5-8bbe36f70e6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Graphics\HLGI\Renderers\Ortho">
+      <UniqueIdentifier>{82171168-50bb-47df-8070-efd6b10ad371}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>Framework\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception.cpp">
+      <Filter>Framework\Utilities\Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="GPU.cpp">
+      <Filter>Framework\Graphics\LLGI</Filter>
+    </ClCompile>
+    <ClCompile Include="GPU_Sampler.cpp">
+      <Filter>Framework\Graphics\LLGI\Sampler</Filter>
+    </ClCompile>
+    <ClCompile Include="GPU_Program.cpp">
+      <Filter>Framework\Graphics\LLGI\Program</Filter>
+    </ClCompile>
+    <ClCompile Include="GPU_Transfer.cpp">
+      <Filter>Framework\Graphics\LLGI\Transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="HighPrecisionTimer.cpp">
+      <Filter>Framework\Utilities\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Framework\Utilities\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetManager.cpp">
+      <Filter>Framework\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="FontAsset.cpp">
+      <Filter>Framework\Loading\Asset\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureAsset.cpp">
+      <Filter>Framework\Loading\Asset\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalAssetManager.cpp">
+      <Filter>Framework\Loading\Local</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture2D.cpp">
+      <Filter>Framework\Graphics\HLGI\Actors\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer2D.cpp">
+      <Filter>Framework\Graphics\HLGI\Renderers\Ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="OrthoShader.cpp">
+      <Filter>Framework\Graphics\HLGI\Shaders\Orthographic</Filter>
+    </ClCompile>
+    <ClCompile Include="Text2D.cpp">
+      <Filter>Framework\Graphics\HLGI\Actors\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Button2D.cpp">
+      <Filter>Framework\Graphics\HLGI\Actors\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>Framework\Graphics\HLGI\Actors\Cube</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Framework\Graphics\HLGI\Actors\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelFile.cpp">
+      <Filter>Framework\Loading\Asset\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Game\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="level.cpp">
+      <Filter>Game\level</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultCamera.cpp">
+      <Filter>Framework\Graphics\HLGI\Camera\Deafult Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="FirstPersonCamera.cpp">
+      <Filter>Framework\Graphics\HLGI\Camera\First Person</Filter>
+    </ClCompile>
+    <ClCompile Include="Skybox.cpp">
+      <Filter>Framework\Graphics\HLGI\Actors\Skybox</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryBuffer.cpp">
+      <Filter>Framework\Graphics\LLGI\Geometry Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="DeferredOutputShader.cpp">
+      <Filter>Framework\Graphics\HLGI\Shaders\Deferred Output</Filter>
+    </ClCompile>
+    <ClCompile Include="DeferredInputShader.cpp">
+      <Filter>Framework\Graphics\HLGI\Shaders\Deferred Input</Filter>
+    </ClCompile>
+    <ClCompile Include="DeferredRenderer.cpp">
+      <Filter>Framework\Graphics\HLGI\Renderers\Deferred</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Framework\System\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Heightmap.cpp">
+      <Filter>Framework\Graphics\HLGI\Actors\Heightmap</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="System.h">
+      <Filter>Framework\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>Framework\Utilities\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="GPU.h">
+      <Filter>Framework\Graphics\LLGI</Filter>
+    </ClInclude>
+    <ClInclude Include="GPU_Sampler.h">
+      <Filter>Framework\Graphics\LLGI\Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="GPU_Program.h">
+      <Filter>Framework\Graphics\LLGI\Program</Filter>
+    </ClInclude>
+    <ClInclude Include="GPU_Transfer.h">
+      <Filter>Framework\Graphics\LLGI\Transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="HighPrecisionTimer.h">
+      <Filter>Framework\Utilities\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Framework\Utilities\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManager.h">
+      <Filter>Framework\Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="FontAsset.h">
+      <Filter>Framework\Loading\Asset\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureAsset.h">
+      <Filter>Framework\Loading\Asset\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalAssetManager.h">
+      <Filter>Framework\Loading\Local</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture2D.h">
+      <Filter>Framework\Graphics\HLGI\Actors\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer2D.h">
+      <Filter>Framework\Graphics\HLGI\Renderers\Ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="OrthoShader.h">
+      <Filter>Framework\Graphics\HLGI\Shaders\Orthographic</Filter>
+    </ClInclude>
+    <ClInclude Include="HLGI.h">
+      <Filter>Framework\Graphics\HLGI</Filter>
+    </ClInclude>
+    <ClInclude Include="Text2D.h">
+      <Filter>Framework\Graphics\HLGI\Actors\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Button2D.h">
+      <Filter>Framework\Graphics\HLGI\Actors\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Framework\Graphics\HLGI\Actors\Cube</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Framework\Graphics\HLGI\Actors\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelFile.h">
+      <Filter>Framework\Loading\Asset\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Game\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="level.h">
+      <Filter>Game\level</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Framework\Graphics\HLGI\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultCamera.h">
+      <Filter>Framework\Graphics\HLGI\Camera\Deafult Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="FirstPersonCamera.h">
+      <Filter>Framework\Graphics\HLGI\Camera\First Person</Filter>
+    </ClInclude>
+    <ClInclude Include="Skybox.h">
+      <Filter>Framework\Graphics\HLGI\Actors\Skybox</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryBuffer.h">
+      <Filter>Framework\Graphics\LLGI\Geometry Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="DeferredOutputShader.h">
+      <Filter>Framework\Graphics\HLGI\Shaders\Deferred Output</Filter>
+    </ClInclude>
+    <ClInclude Include="DeferredInputShader.h">
+      <Filter>Framework\Graphics\HLGI\Shaders\Deferred Input</Filter>
+    </ClInclude>
+    <ClInclude Include="DeferredRenderer.h">
+      <Filter>Framework\Graphics\HLGI\Renderers\Deferred</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Framework\System\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Heightmap.h">
+      <Filter>Framework\Graphics\HLGI\Actors\Heightmap</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

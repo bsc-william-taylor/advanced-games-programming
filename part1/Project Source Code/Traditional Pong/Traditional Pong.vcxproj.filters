@@ -1,0 +1,509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Framework\Drawables">
+      <UniqueIdentifier>{da442493-0c8b-4281-8f63-7e6afd260e0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Drawables\Label">
+      <UniqueIdentifier>{80a48d89-d939-4d2e-adf1-e251a0a32d48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Drawables\Actor">
+      <UniqueIdentifier>{352965dd-d1f3-4247-85e1-559001a6086a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Drawables\Texture">
+      <UniqueIdentifier>{a6a0124f-5c9d-463c-aacc-c178ce419bbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Drawables\Renderer">
+      <UniqueIdentifier>{3c6f4ca0-e40c-444e-a2c9-b6d4ec6d1dce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Application">
+      <UniqueIdentifier>{080e2ad9-9626-4ca6-9186-16ea359ecda1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Application\Librarys">
+      <UniqueIdentifier>{422bd8ff-436c-4fe0-a19f-ea954b953014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Application\Timer">
+      <UniqueIdentifier>{c17b2f3d-bbb8-42d8-b4f5-a08932b14a95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Application\Scenes">
+      <UniqueIdentifier>{b8485298-7200-46d8-8e84-d10b1313ffc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Application\Window">
+      <UniqueIdentifier>{eee9f138-6c36-460d-a887-c1cea1cd6a4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Application\Events">
+      <UniqueIdentifier>{06cef5da-aec1-427c-a94d-d9212ed2f08d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Application\Events\Interfaces">
+      <UniqueIdentifier>{f961c899-ddf9-48be-8d57-5f16cc6030f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Application\Events\Manager">
+      <UniqueIdentifier>{06f41c05-a2aa-4a33-be6c-090bf97ff78e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Game\Scenes">
+      <UniqueIdentifier>{dc45a13b-cdec-417b-b693-73f5556b6c00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Actors">
+      <UniqueIdentifier>{7c41fd75-402c-4428-b311-c73cada83a47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Actors\Player">
+      <UniqueIdentifier>{bcbf881e-02b9-482c-a790-64b504c6676b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Actors\Hud">
+      <UniqueIdentifier>{bc7fc242-2273-4684-aa9b-906c1b470495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\File &amp; IO">
+      <UniqueIdentifier>{78d132a1-8157-4426-9249-46433c166275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\File &amp; IO\TinyXml2">
+      <UniqueIdentifier>{d3203e18-6561-4bfa-93a3-1a09ce53d402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\File &amp; IO\XML Files">
+      <UniqueIdentifier>{a1713443-ac74-4097-bc77-d3537f78bc82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Actors\Paragraph">
+      <UniqueIdentifier>{c97cd9a7-5b0c-454e-9771-1a1338861491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Application\Bank">
+      <UniqueIdentifier>{faf4f9e1-aad9-46dd-baab-96b2dfb8f8b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Actors\Ball">
+      <UniqueIdentifier>{73947895-7406-4a1a-b269-313ec027b5af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Behaviour">
+      <UniqueIdentifier>{c91b8990-d0a5-4fef-8bad-c499c5d3c1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Behaviour\Ball">
+      <UniqueIdentifier>{5301b228-0404-4a33-b9b4-9565feddb41e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Behaviour\Ai">
+      <UniqueIdentifier>{ed65d321-1eed-41fb-822e-c45fb22cd2ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Behaviour\Player">
+      <UniqueIdentifier>{25864b56-2929-4004-9f14-123b815f7060}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Networking">
+      <UniqueIdentifier>{f003bba9-a775-47b5-91aa-e7cc48f65e72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Networking\Client">
+      <UniqueIdentifier>{124615a2-0c15-48d5-acae-7633f764e9ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Networking\Server">
+      <UniqueIdentifier>{95c79edb-439c-4780-b37f-15902b7a141f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Player Maps">
+      <UniqueIdentifier>{1da3a0fe-b58f-4f21-81a2-bbb7cabccf83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Player Maps\1 Player Map">
+      <UniqueIdentifier>{b3385dab-0e83-435f-a437-d455a01bd04f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Player Maps\2 Player Map">
+      <UniqueIdentifier>{452db82b-da7e-4b34-9c58-8ed596a98f4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Player Maps\Online Player Map">
+      <UniqueIdentifier>{8cc2e77a-b2cd-4055-991c-eca84bc2a84e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Menu Screens">
+      <UniqueIdentifier>{95a506ff-0d53-4e7e-8454-b39d3818c08c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Menu Screens\Multiplayer">
+      <UniqueIdentifier>{ea59c43f-ebed-4e41-a746-683b944ef24b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Menu Screens\Controls">
+      <UniqueIdentifier>{b64c972b-38a8-4770-b719-adb524207977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Menu Screens\Credits">
+      <UniqueIdentifier>{c306e4f4-db9d-41db-9e37-17c3bd52115d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Menu Screens\Game Over">
+      <UniqueIdentifier>{1dfc98d8-b63a-46d1-9a3a-e4f7f223b8cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Menu Screens\Menu">
+      <UniqueIdentifier>{8a50663f-3688-474b-9c5b-ede714376ec1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Scenes\Menu Screens\Statistics">
+      <UniqueIdentifier>{cdf4726c-9b20-4c67-a87c-af5477adabc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Actors\Screen">
+      <UniqueIdentifier>{da103978-e4d3-4261-a1cc-fb3890ec7a92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Utilities">
+      <UniqueIdentifier>{42084bfc-435f-4985-9049-e926788b2352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Utilities\Exceptions">
+      <UniqueIdentifier>{a3a62d4a-1d8a-482f-996b-f703e9b43b36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Utilities\Header">
+      <UniqueIdentifier>{c1860b23-9a88-4ddd-8278-a45f9c007162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Playables">
+      <UniqueIdentifier>{240cce19-9e56-4274-82b6-89bf0fd23bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Playables\Music">
+      <UniqueIdentifier>{20455005-debf-4b64-bb0e-71952154c42e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Networking\Packet">
+      <UniqueIdentifier>{f186882f-86b0-4249-bc49-c278f3621498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Drawables\Button">
+      <UniqueIdentifier>{3c683931-c549-4e67-b5aa-e907d4c007ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Application\Events\Listeners">
+      <UniqueIdentifier>{2040367d-6939-4886-aa2f-88ae86386955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Files">
+      <UniqueIdentifier>{73e01f9b-c4bb-4fa6-bc31-5dccc66c2567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Files\Text Files">
+      <UniqueIdentifier>{984c00d1-0d58-4e68-8b08-9ee30d6bb710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Files\Font Files">
+      <UniqueIdentifier>{50f19fe8-fddf-4f0a-8c0f-54e0591b6729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Files\Texture FIles">
+      <UniqueIdentifier>{1aeb7725-dff8-4281-bd46-9ecdf51cc156}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Events">
+      <UniqueIdentifier>{6b54565a-48c0-497a-aa55-7b60b99d1d9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Events\ResetEvent">
+      <UniqueIdentifier>{f1c450c0-d86f-4f76-8c6e-4f8a28a6667b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Events\Screen Collision">
+      <UniqueIdentifier>{40ef1603-ef99-4343-adcc-cec8e675e99e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Events\Block Collision">
+      <UniqueIdentifier>{fd37eebc-2669-47e1-866c-1e6c12f95dc4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Framework\Application\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Framework\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Framework\Drawables\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Framework\Drawables\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Label.cpp">
+      <Filter>Framework\Drawables\Label</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Framework\Application\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="highPrecisionTimer.cpp">
+      <Filter>Framework\Application\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionListener.cpp">
+      <Filter>Framework\Application\Events\Listeners</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>Framework\Application\Events\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Game\Actors\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Framework\Drawables\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="BallBehaviour.cpp">
+      <Filter>Game\Behaviour\Ball</Filter>
+    </ClCompile>
+    <ClCompile Include="TImeoutListener.cpp">
+      <Filter>Framework\Application\Events\Listeners</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Game\Scenes\Menu Screens\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Framework\Drawables\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonListener.cpp">
+      <Filter>Framework\Application\Events\Listeners</Filter>
+    </ClCompile>
+    <ClCompile Include="About.cpp">
+      <Filter>Game\Scenes\Menu Screens\Credits</Filter>
+    </ClCompile>
+    <ClCompile Include="Gameover.cpp">
+      <Filter>Game\Scenes\Menu Screens\Game Over</Filter>
+    </ClCompile>
+    <ClCompile Include="Statistics.cpp">
+      <Filter>Game\Scenes\Menu Screens\Statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="Hud.cpp">
+      <Filter>Game\Actors\Hud</Filter>
+    </ClCompile>
+    <ClCompile Include="Music.cpp">
+      <Filter>Framework\Playables\Music</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>Framework\File &amp; IO\TinyXml2</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLFile.cpp">
+      <Filter>Framework\File &amp; IO\XML Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Paragraph.cpp">
+      <Filter>Game\Actors\Paragraph</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockCollision.cpp">
+      <Filter>Game\Events\Block Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenCollision.cpp">
+      <Filter>Game\Events\Screen Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Ball.cpp">
+      <Filter>Game\Actors\Ball</Filter>
+    </ClCompile>
+    <ClCompile Include="Controls.cpp">
+      <Filter>Game\Scenes\Menu Screens\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="TwoPlayerMap.cpp">
+      <Filter>Game\Scenes\Player Maps\2 Player Map</Filter>
+    </ClCompile>
+    <ClCompile Include="OnePlayerMap.cpp">
+      <Filter>Game\Scenes\Player Maps\1 Player Map</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerBehavior.cpp">
+      <Filter>Game\Behaviour\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="AiBehaviour.cpp">
+      <Filter>Game\Behaviour\Ai</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources.cpp">
+      <Filter>Game\Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Multiplayer.cpp">
+      <Filter>Game\Scenes\Menu Screens\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>Framework\Networking\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>Framework\Networking\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Packet.cpp">
+      <Filter>Framework\Networking\Packet</Filter>
+    </ClCompile>
+    <ClCompile Include="OnlinePlayerMap.cpp">
+      <Filter>Game\Scenes\Player Maps\Online Player Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Networking.cpp">
+      <Filter>Framework\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalLibraries.cpp">
+      <Filter>Framework\Application\Librarys</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception.cpp">
+      <Filter>Framework\Utilities\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="ResetEvent.cpp">
+      <Filter>Game\Events\ResetEvent</Filter>
+    </ClCompile>
+    <ClCompile Include="Screen.cpp">
+      <Filter>Game\Actors\Screen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Window.h">
+      <Filter>Framework\Application\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Framework\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Framework\Drawables\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Framework\Drawables\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Label.h">
+      <Filter>Framework\Drawables\Label</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Framework\Application\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="highPrecisionTimer.h">
+      <Filter>Framework\Application\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionListener.h">
+      <Filter>Framework\Application\Events\Listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="IListener.h">
+      <Filter>Framework\Application\Events\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager.h">
+      <Filter>Framework\Application\Events\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="IHandler.h">
+      <Filter>Framework\Application\Events\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ICollidable.h">
+      <Filter>Framework\Application\Events\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>Game\Actors\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Game\Actors\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Framework\Drawables\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="BallBehaviour.h">
+      <Filter>Game\Behaviour\Ball</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeoutListener.h">
+      <Filter>Framework\Application\Events\Listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Game\Scenes\Menu Screens\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Framework\Drawables\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonListener.h">
+      <Filter>Framework\Application\Events\Listeners</Filter>
+    </ClInclude>
+    <ClInclude Include="IClickable.h">
+      <Filter>Framework\Application\Events\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="About.h">
+      <Filter>Game\Scenes\Menu Screens\Credits</Filter>
+    </ClInclude>
+    <ClInclude Include="Gameover.h">
+      <Filter>Game\Scenes\Menu Screens\Game Over</Filter>
+    </ClInclude>
+    <ClInclude Include="Statistics.h">
+      <Filter>Game\Scenes\Menu Screens\Statistics</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes.h">
+      <Filter>Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Hud.h">
+      <Filter>Game\Actors\Hud</Filter>
+    </ClInclude>
+    <ClInclude Include="Music.h">
+      <Filter>Framework\Playables\Music</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources.h">
+      <Filter>Game\Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>Framework\File &amp; IO\TinyXml2</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLFile.h">
+      <Filter>Framework\File &amp; IO\XML Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Paragraph.h">
+      <Filter>Game\Actors\Paragraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Bank.h">
+      <Filter>Framework\Application\Bank</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockCollision.h">
+      <Filter>Game\Events\Block Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenCollision.h">
+      <Filter>Game\Events\Screen Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Ball.h">
+      <Filter>Game\Actors\Ball</Filter>
+    </ClInclude>
+    <ClInclude Include="Controls.h">
+      <Filter>Game\Scenes\Menu Screens\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="TwoPlayerMap.h">
+      <Filter>Game\Scenes\Player Maps\2 Player Map</Filter>
+    </ClInclude>
+    <ClInclude Include="OnePlayerMap.h">
+      <Filter>Game\Scenes\Player Maps\1 Player Map</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerBehavior.h">
+      <Filter>Game\Behaviour\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="AiBehaviour.h">
+      <Filter>Game\Behaviour\Ai</Filter>
+    </ClInclude>
+    <ClInclude Include="Multiplayer.h">
+      <Filter>Game\Scenes\Menu Screens\Multiplayer</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Framework\Networking\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>Framework\Networking\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Networking.h">
+      <Filter>Framework\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>Framework\Networking\Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="OnlinePlayerMap.h">
+      <Filter>Game\Scenes\Player Maps\Online Player Map</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalLibraries.h">
+      <Filter>Framework\Application\Librarys</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>Framework\Utilities\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonHeader.h">
+      <Filter>Framework\Utilities\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ResetEvent.h">
+      <Filter>Game\Events\ResetEvent</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="panel.jpg">
+      <Filter>Game\Files\Texture FIles</Filter>
+    </Image>
+    <Image Include="background.png">
+      <Filter>Game\Files\Texture FIles</Filter>
+    </Image>
+    <Image Include="block.jpg">
+      <Filter>Game\Files\Texture FIles</Filter>
+    </Image>
+    <Image Include="menu.jpg">
+      <Filter>Game\Files\Texture FIles</Filter>
+    </Image>
+    <Image Include="center.jpg">
+      <Filter>Game\Files\Texture FIles</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="data\MOZART_0.ttf">
+      <Filter>Game\Files\Font Files</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="data\about.xml">
+      <Filter>Game\Files\Text Files</Filter>
+    </Xml>
+    <Xml Include="data\statistics.xml">
+      <Filter>Game\Files\Text Files</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>
