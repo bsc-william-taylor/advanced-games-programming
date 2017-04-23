@@ -133,7 +133,7 @@ bool Button2D::isPressed(SDL_Event& e)
 		};
 
 		// and check to see if its inside the button
-		return(mx >= pos.x && mx <= pos.x + pos.w && my >= pos.y && my <= pos.y + pos.h)
+		return (mx >= pos.x && mx <= pos.x + pos.w && my >= pos.y && my <= pos.y + pos.h);
 	}
 
 	return false;

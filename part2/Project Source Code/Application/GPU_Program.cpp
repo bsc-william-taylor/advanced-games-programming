@@ -52,7 +52,7 @@ void GPU_Program::setFragmentSource(const char * source)
 	if (std::string(source).find(".glsl") == std::string::npos)
 	{
 		// we just load it directly into the shader
-		glShaderSourceARB(fragmentID, 1, &source, NULL);
+		glShaderSource(fragmentID, 1, &source, NULL);
 		glCompileShader(fragmentID);
 	}
 	else
@@ -75,7 +75,7 @@ void GPU_Program::setFragmentSource(const char * source)
 			const GLchar * c_source = src.c_str();
 
 			// and send it to the shader
-			glShaderSourceARB(fragmentID, 1, &c_source, NULL);
+			glShaderSource(fragmentID, 1, &c_source, NULL);
 			glCompileShader(fragmentID);
 		}
 		else
@@ -107,7 +107,7 @@ void GPU_Program::setVertexSource(const char * source)
 	if (std::string(source).find(".glsl") == std::string::npos)
 	{
 		// we just load it directly into the shader
-		glShaderSourceARB(vertexID, 1, &source, NULL);
+		glShaderSource(vertexID, 1, &source, NULL);
 		glCompileShader(vertexID);
 	}
 	else
@@ -220,7 +220,7 @@ void GPU_Program::bindShader()
 // This function simply calls a draw call and renders the object onto the screen
 void GPU_Program::run(GLuint type, GLuint start, GLuint count)
 {
-	glDrawArraysEXT(type, start, count);
+	glDrawArrays(type, start, count);
 }
 
 // two simpler functions of the one above

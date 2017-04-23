@@ -103,5 +103,7 @@ GLuint Model::getDataID()
 // returns the texture ID for mesh i
 GLuint Model::getTextureIDs(int i)
 {
-	return tIDs[file->getMaterialIDs()[i]];
+    auto index = file->getMaterialIDs()[i];
+
+	return tIDs[std::min(index, tIDs.size()-1)];
 }

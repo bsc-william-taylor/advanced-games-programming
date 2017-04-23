@@ -44,7 +44,7 @@
 #include <map>
 
 // these are additional libraries that are not part of the C++ language
-#include "glew.h"
+#include "glew/glew.h"
 #include "gl\gl.h"
 #include "assimp/postprocess.h"    
 #include "assimp/Importer.hpp"          
@@ -67,7 +67,7 @@
 #pragma comment(lib, "assimp/assimp.lib") 
 #pragma comment(lib, "SDL2/SDL2.lib")
 #pragma comment(lib, "opengl32.lib")
-#pragma comment(lib, "glew32.lib")
+#pragma comment(lib, "glew/glew32.lib")
 
 // include GLM until I have the time to write my own math classes
 #include "glm/glm/glm.hpp"

@@ -82,7 +82,7 @@ void Cube::setArea(glm::vec3 position, glm::vec3 size, int r)
 			glm::vec3(p[0], p[1], p[2]), glm::vec3(p[0], s[1], p[2]), glm::vec3(s[0], s[1], p[2]),
 			glm::vec3(p[0], p[1], p[2]), glm::vec3(s[0], p[1], p[2]), glm::vec3(s[0], s[1], p[2]),
 			glm::vec3(p[0], p[1], s[2]), glm::vec3(p[0], s[1], s[2]), glm::vec3(s[0], s[1], s[2]),
-			glm::vec3(p[0], p[1], s[2]), glm::vec3(s[0], p[1], s[2]), glm::vec3(s[0], s[1], s[2])
+			glm::vec3(p[0], p[1], s[2]), glm::vec3(s[0], p[1], s[2]), glm::vec3(s[0], s[1], s[2]),
 			glm::vec3(s[0], p[1], p[2]), glm::vec3(s[0], s[1], p[2]), glm::vec3(s[0], s[1], s[2]),
 			glm::vec3(s[0], p[1], p[2]), glm::vec3(s[0], p[1], s[2]), glm::vec3(s[0], s[1], s[2]),
 			glm::vec3(p[0], p[1], p[2]), glm::vec3(p[0], s[1], p[2]), glm::vec3(p[0], s[1], s[2]),

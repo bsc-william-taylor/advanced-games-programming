@@ -106,7 +106,7 @@ void FirstPersonCamera::updateCameraPosition(SDL_Event& e)
 	// if we have a key up event
 	if (e.type == SDL_KEYUP) 
 	{
-		/ change the key state variable accordingly
+		// change the key state variable accordingly
 		switch (e.key.keysym.sym) {
 			case SDLK_w: keys[0] = FALSE;  break;
 			case SDLK_s: keys[1] = FALSE;  break;
