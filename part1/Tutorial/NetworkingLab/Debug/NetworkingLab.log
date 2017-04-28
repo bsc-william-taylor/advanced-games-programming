@@ -1,0 +1,13 @@
+﻿  lab_main.cpp
+c:\program files (x86)\windows kits\8.1\include\um\winsock.h(296): warning C4005: 'INADDR_ANY': macro redefinition
+  c:\users\william-taylor\desktop\projects\advanced-games-programming\part1\tutorial source code\networkinglab\sdl2\sdl_net.h(102): note: see previous definition of 'INADDR_ANY'
+c:\program files (x86)\windows kits\8.1\include\um\winsock.h(298): warning C4005: 'INADDR_BROADCAST': macro redefinition
+  c:\users\william-taylor\desktop\projects\advanced-games-programming\part1\tutorial source code\networkinglab\sdl2\sdl_net.h(111): note: see previous definition of 'INADDR_BROADCAST'
+c:\program files (x86)\windows kits\8.1\include\um\winsock.h(299): warning C4005: 'INADDR_NONE': macro redefinition
+  c:\users\william-taylor\desktop\projects\advanced-games-programming\part1\tutorial source code\networkinglab\sdl2\sdl_net.h(105): note: see previous definition of 'INADDR_NONE'
+c:\users\william-taylor\desktop\projects\advanced-games-programming\part1\tutorial source code\networkinglab\lab_main.cpp(73): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: see declaration of 'strcpy'
+c:\users\william-taylor\desktop\projects\advanced-games-programming\part1\tutorial source code\networkinglab\lab_main.cpp(104): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: see declaration of 'sprintf'
+  NetworkingLab.vcxproj -> C:\Users\william-taylor\Desktop\Projects\advanced-games-programming\part1\Tutorial Source Code\Debug\NetworkingLab.exe
+  NetworkingLab.vcxproj -> C:\Users\william-taylor\Desktop\Projects\advanced-games-programming\part1\Tutorial Source Code\Debug\NetworkingLab.pdb (Full PDB)
