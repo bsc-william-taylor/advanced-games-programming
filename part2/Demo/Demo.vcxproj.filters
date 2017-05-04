@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Game">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
     <Filter Include="Framework">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
@@ -111,12 +107,6 @@
     <Filter Include="Framework\Utilities\Scenes">
       <UniqueIdentifier>{ba29ef49-bff1-4528-b3f0-9990eaa77d40}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Game\menu">
-      <UniqueIdentifier>{24bedf0a-b846-4414-976b-cd18a5f12c14}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Game\level">
-      <UniqueIdentifier>{75b2ee07-4ef8-4ab6-821b-5196ddaf3d19}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Framework\Graphics\HLGI\Renderers">
       <UniqueIdentifier>{76179baf-a468-4af4-8ebd-6dc2e16114a7}</UniqueIdentifier>
     </Filter>
@@ -126,10 +116,20 @@
     <Filter Include="Framework\Graphics\HLGI\Renderers\Ortho">
       <UniqueIdentifier>{82171168-50bb-47df-8070-efd6b10ad371}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Entry">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Entry\Menu">
+      <UniqueIdentifier>{24bedf0a-b846-4414-976b-cd18a5f12c14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entry\Level">
+      <UniqueIdentifier>{75b2ee07-4ef8-4ab6-821b-5196ddaf3d19}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Game</Filter>
+      <Filter>Entry</Filter>
     </ClCompile>
     <ClCompile Include="System.cpp">
       <Filter>Framework\System</Filter>
@@ -192,10 +192,10 @@
       <Filter>Framework\Loading\Asset\Model</Filter>
     </ClCompile>
     <ClCompile Include="menu.cpp">
-      <Filter>Game\menu</Filter>
+      <Filter>Entry\Menu</Filter>
     </ClCompile>
     <ClCompile Include="level.cpp">
-      <Filter>Game\level</Filter>
+      <Filter>Entry\Level</Filter>
     </ClCompile>
     <ClCompile Include="DefaultCamera.cpp">
       <Filter>Framework\Graphics\HLGI\Camera\Deafult Camera</Filter>
@@ -290,10 +290,10 @@
       <Filter>Framework\Loading\Asset\Model</Filter>
     </ClInclude>
     <ClInclude Include="menu.h">
-      <Filter>Game\menu</Filter>
+      <Filter>Entry\Menu</Filter>
     </ClInclude>
     <ClInclude Include="level.h">
-      <Filter>Game\level</Filter>
+      <Filter>Entry\Level</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
       <Filter>Framework\Graphics\HLGI\Camera</Filter>
@@ -326,7 +326,7 @@
       <Filter>Framework\Graphics\HLGI\Actors\Heightmap</Filter>
     </ClInclude>
     <ClInclude Include="main.h">
-      <Filter>Game</Filter>
+      <Filter>Entry</Filter>
     </ClInclude>
     <ClInclude Include="Framework.h">
       <Filter>Framework</Filter>
