@@ -3,6 +3,13 @@
 *.lo
 *.o
 *.obj
+*.db
+*.opendb
+
+# Folders
+Debug
+Release
+.vs
 
 # Precompiled Headers
 *.gch
