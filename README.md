@@ -5,7 +5,7 @@
 
 # Advanced Games Programming
 
-The Advanced Games Programming module taught advanced programming concepts in C++, Graphics, Networking and Multithreading.
+The Advanced Games Programming module taught advanced programming concepts in C++, graphics, networking and multi-threading. It was entirely assessed through practical coursework and gave students freedom to explore advanced topics that intrigued them. 
  
 ## Assignment
 
