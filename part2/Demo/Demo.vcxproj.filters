@@ -8,21 +8,6 @@
     <Filter Include="Framework\Loading">
       <UniqueIdentifier>{29af9675-64f2-4c82-9a62-b006483d5297}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Framework\Loading\Asset">
-      <UniqueIdentifier>{e8ac7a8d-6492-4a20-a411-f318e7a7ec2a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Framework\Loading\Asset\Texture">
-      <UniqueIdentifier>{99e0c010-fde7-43e4-89cc-7afddf527343}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Framework\Loading\Asset\Font">
-      <UniqueIdentifier>{847b3a85-07ff-4c36-b442-b53fefd0c3ab}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Framework\Loading\Asset\Model">
-      <UniqueIdentifier>{fa74a47a-31cd-4bab-9093-6058bc989560}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Framework\Loading\Local">
-      <UniqueIdentifier>{b08d6164-7344-4b7b-98dc-876ecbe440d5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Framework\Graphics">
       <UniqueIdentifier>{d0cbba92-2c54-4585-a034-2b2bd89b1dd8}</UniqueIdentifier>
     </Filter>
@@ -92,20 +77,8 @@
     <Filter Include="Framework\System">
       <UniqueIdentifier>{0ee160c4-4951-4570-8890-c4881349954b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Framework\System\Window">
-      <UniqueIdentifier>{5c6610f2-507d-4827-97de-76aef546a7e1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Framework\Utilities">
       <UniqueIdentifier>{521d23e9-a979-4dab-b8da-5e1668b93b49}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Framework\Utilities\Exception">
-      <UniqueIdentifier>{b8e1fedc-d3b9-4d7a-9544-419486ca8875}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Framework\Utilities\Timer">
-      <UniqueIdentifier>{89ad58f0-ee07-43f7-b1b2-14ab3b0a4502}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Framework\Utilities\Scenes">
-      <UniqueIdentifier>{ba29ef49-bff1-4528-b3f0-9990eaa77d40}</UniqueIdentifier>
     </Filter>
     <Filter Include="Framework\Graphics\HLGI\Renderers">
       <UniqueIdentifier>{76179baf-a468-4af4-8ebd-6dc2e16114a7}</UniqueIdentifier>
@@ -128,14 +101,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Entry</Filter>
-    </ClCompile>
     <ClCompile Include="System.cpp">
       <Filter>Framework\System</Filter>
-    </ClCompile>
-    <ClCompile Include="Exception.cpp">
-      <Filter>Framework\Utilities\Exception</Filter>
     </ClCompile>
     <ClCompile Include="GPU.cpp">
       <Filter>Framework\Graphics\LLGI</Filter>
@@ -149,23 +116,8 @@
     <ClCompile Include="GPU_Transfer.cpp">
       <Filter>Framework\Graphics\LLGI\Transfer</Filter>
     </ClCompile>
-    <ClCompile Include="HighPrecisionTimer.cpp">
-      <Filter>Framework\Utilities\Timer</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneManager.cpp">
-      <Filter>Framework\Utilities\Scenes</Filter>
-    </ClCompile>
     <ClCompile Include="AssetManager.cpp">
       <Filter>Framework\Loading</Filter>
-    </ClCompile>
-    <ClCompile Include="FontAsset.cpp">
-      <Filter>Framework\Loading\Asset\Font</Filter>
-    </ClCompile>
-    <ClCompile Include="TextureAsset.cpp">
-      <Filter>Framework\Loading\Asset\Texture</Filter>
-    </ClCompile>
-    <ClCompile Include="LocalAssetManager.cpp">
-      <Filter>Framework\Loading\Local</Filter>
     </ClCompile>
     <ClCompile Include="Texture2D.cpp">
       <Filter>Framework\Graphics\HLGI\Actors\Texture</Filter>
@@ -188,15 +140,6 @@
     <ClCompile Include="Model.cpp">
       <Filter>Framework\Graphics\HLGI\Actors\Model</Filter>
     </ClCompile>
-    <ClCompile Include="ModelFile.cpp">
-      <Filter>Framework\Loading\Asset\Model</Filter>
-    </ClCompile>
-    <ClCompile Include="menu.cpp">
-      <Filter>Entry\Menu</Filter>
-    </ClCompile>
-    <ClCompile Include="level.cpp">
-      <Filter>Entry\Level</Filter>
-    </ClCompile>
     <ClCompile Include="DefaultCamera.cpp">
       <Filter>Framework\Graphics\HLGI\Camera\Deafult Camera</Filter>
     </ClCompile>
@@ -218,19 +161,46 @@
     <ClCompile Include="DeferredRenderer.cpp">
       <Filter>Framework\Graphics\HLGI\Renderers\Deferred</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>Framework\System\Window</Filter>
-    </ClCompile>
     <ClCompile Include="Heightmap.cpp">
       <Filter>Framework\Graphics\HLGI\Actors\Heightmap</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Entry\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Entry\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Framework\System</Filter>
+    </ClCompile>
+    <ClCompile Include="HighPrecisionTimer.cpp">
+      <Filter>Framework\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Framework\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Exception.cpp">
+      <Filter>Framework\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalAssetManager.cpp">
+      <Filter>Framework\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureAsset.cpp">
+      <Filter>Framework\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelFile.cpp">
+      <Filter>Framework\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="FontAsset.cpp">
+      <Filter>Framework\Loading</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="System.h">
       <Filter>Framework\System</Filter>
-    </ClInclude>
-    <ClInclude Include="Exception.h">
-      <Filter>Framework\Utilities\Exception</Filter>
     </ClInclude>
     <ClInclude Include="GPU.h">
       <Filter>Framework\Graphics\LLGI</Filter>
@@ -244,23 +214,8 @@
     <ClInclude Include="GPU_Transfer.h">
       <Filter>Framework\Graphics\LLGI\Transfer</Filter>
     </ClInclude>
-    <ClInclude Include="HighPrecisionTimer.h">
-      <Filter>Framework\Utilities\Timer</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneManager.h">
-      <Filter>Framework\Utilities\Scenes</Filter>
-    </ClInclude>
     <ClInclude Include="AssetManager.h">
       <Filter>Framework\Loading</Filter>
-    </ClInclude>
-    <ClInclude Include="FontAsset.h">
-      <Filter>Framework\Loading\Asset\Font</Filter>
-    </ClInclude>
-    <ClInclude Include="TextureAsset.h">
-      <Filter>Framework\Loading\Asset\Texture</Filter>
-    </ClInclude>
-    <ClInclude Include="LocalAssetManager.h">
-      <Filter>Framework\Loading\Local</Filter>
     </ClInclude>
     <ClInclude Include="Texture2D.h">
       <Filter>Framework\Graphics\HLGI\Actors\Texture</Filter>
@@ -286,15 +241,6 @@
     <ClInclude Include="Model.h">
       <Filter>Framework\Graphics\HLGI\Actors\Model</Filter>
     </ClInclude>
-    <ClInclude Include="ModelFile.h">
-      <Filter>Framework\Loading\Asset\Model</Filter>
-    </ClInclude>
-    <ClInclude Include="menu.h">
-      <Filter>Entry\Menu</Filter>
-    </ClInclude>
-    <ClInclude Include="level.h">
-      <Filter>Entry\Level</Filter>
-    </ClInclude>
     <ClInclude Include="Camera.h">
       <Filter>Framework\Graphics\HLGI\Camera</Filter>
     </ClInclude>
@@ -319,17 +265,44 @@
     <ClInclude Include="DeferredRenderer.h">
       <Filter>Framework\Graphics\HLGI\Renderers\Deferred</Filter>
     </ClInclude>
-    <ClInclude Include="Window.h">
-      <Filter>Framework\System\Window</Filter>
-    </ClInclude>
     <ClInclude Include="Heightmap.h">
       <Filter>Framework\Graphics\HLGI\Actors\Heightmap</Filter>
     </ClInclude>
-    <ClInclude Include="main.h">
-      <Filter>Entry</Filter>
-    </ClInclude>
     <ClInclude Include="Framework.h">
       <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Entry</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Entry\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Entry\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Framework\System</Filter>
+    </ClInclude>
+    <ClInclude Include="HighPrecisionTimer.h">
+      <Filter>Framework\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Framework\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Exception.h">
+      <Filter>Framework\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalAssetManager.h">
+      <Filter>Framework\Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureAsset.h">
+      <Filter>Framework\Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelFile.h">
+      <Filter>Framework\Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="FontAsset.h">
+      <Filter>Framework\Loading</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

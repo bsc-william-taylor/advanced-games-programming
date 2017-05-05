@@ -116,8 +116,8 @@ xcopy /Y $(SolutionDir)..\lib\Assimp\Assimp32.dll $(OutDir)</Command>
     <ClCompile Include="FirstPersonCamera.cpp" />
     <ClCompile Include="GeometryBuffer.cpp" />
     <ClCompile Include="Heightmap.cpp" />
-    <ClCompile Include="level.cpp" />
-    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Exception.cpp" />
     <ClCompile Include="FontAsset.cpp" />
     <ClCompile Include="LocalAssetManager.cpp" />
@@ -129,7 +129,7 @@ xcopy /Y $(SolutionDir)..\lib\Assimp\Assimp32.dll $(OutDir)</Command>
     <ClCompile Include="GPU_Program.cpp" />
     <ClCompile Include="GPU_Sampler.cpp" />
     <ClCompile Include="GPU_Transfer.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="Skybox.cpp" />
     <ClCompile Include="System.cpp" />
@@ -152,9 +152,9 @@ xcopy /Y $(SolutionDir)..\lib\Assimp\Assimp32.dll $(OutDir)</Command>
     <ClInclude Include="FirstPersonCamera.h" />
     <ClInclude Include="GeometryBuffer.h" />
     <ClInclude Include="Heightmap.h" />
-    <ClInclude Include="level.h" />
-    <ClInclude Include="main.h" />
-    <ClInclude Include="menu.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Exception.h" />
     <ClInclude Include="FontAsset.h" />
     <ClInclude Include="HLGI.h" />
