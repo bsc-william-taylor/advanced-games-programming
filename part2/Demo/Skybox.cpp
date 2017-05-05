@@ -47,7 +47,7 @@ void Skybox::createSkybox(std::initializer_list<TextureAsset*> assets)
 	if (assets.size() == 6 && distance != -1)
 	{
 		// Create the cubemap sampler object
-		cubemap_texture = new GPU_Sampler(CUBE_SAMPLER);
+		cubemap_texture = new GPU_Sampler(SamplerType::CubeSampler);
 
 		// and pass each texture provided to it
 		for (auto& texture : assets)
@@ -83,40 +83,40 @@ void Skybox::setDistance(float distance)
 	// calculate each vertex
 	vertices = {
 		// front
-		Vertex(-distance, -distance, -distance), Vertex(distance, -distance, -distance), Vertex(distance, distance, -distance),
-		Vertex(-distance, -distance, -distance), Vertex(-distance, distance, -distance), Vertex(distance, distance, -distance),
+		glm::vec3(-distance, -distance, -distance), glm::vec3(distance, -distance, -distance), glm::vec3(distance, distance, -distance),
+		glm::vec3(-distance, -distance, -distance), glm::vec3(-distance, distance, -distance), glm::vec3(distance, distance, -distance),
 		// right
-		Vertex(distance, -distance, -distance), Vertex(distance, distance, -distance), Vertex(distance, distance, distance),
-		Vertex(distance, -distance, -distance), Vertex(distance, distance, distance), Vertex(distance, -distance, distance),
+		glm::vec3(distance, -distance, -distance), glm::vec3(distance, distance, -distance), glm::vec3(distance, distance, distance),
+		glm::vec3(distance, -distance, -distance), glm::vec3(distance, distance, distance), glm::vec3(distance, -distance, distance),
 		// back
-		Vertex(-distance, -distance, distance), Vertex(distance, -distance, distance), Vertex(distance, distance, distance),
-		Vertex(-distance, -distance, distance), Vertex(-distance, distance, distance), Vertex(distance, distance, distance),
+		glm::vec3(-distance, -distance, distance), glm::vec3(distance, -distance, distance), glm::vec3(distance, distance, distance),
+		glm::vec3(-distance, -distance, distance), glm::vec3(-distance, distance, distance), glm::vec3(distance, distance, distance),
 		// left
-		Vertex(-distance, -distance, -distance), Vertex(-distance, distance, -distance), Vertex(-distance, distance, distance),
-		Vertex(-distance, -distance, -distance), Vertex(-distance, distance, distance), Vertex(-distance, -distance, distance),
+		glm::vec3(-distance, -distance, -distance), glm::vec3(-distance, distance, -distance), glm::vec3(-distance, distance, distance),
+		glm::vec3(-distance, -distance, -distance), glm::vec3(-distance, distance, distance), glm::vec3(-distance, -distance, distance),
 		// top
-		Vertex(-distance, distance, -distance), Vertex(-distance, distance, distance), Vertex(distance, distance, distance),
-		Vertex(-distance, distance, -distance), Vertex(distance, distance, distance), Vertex(distance, distance, -distance),
+		glm::vec3(-distance, distance, -distance), glm::vec3(-distance, distance, distance), glm::vec3(distance, distance, distance),
+		glm::vec3(-distance, distance, -distance), glm::vec3(distance, distance, distance), glm::vec3(distance, distance, -distance),
 		// bottom
-		Vertex(-distance, -distance, -distance), Vertex(-distance, -distance, distance), Vertex(distance, -distance, distance),
-		Vertex(-distance, -distance, -distance), Vertex(distance, -distance, distance), Vertex(distance, -distance, -distance)
+		glm::vec3(-distance, -distance, -distance), glm::vec3(-distance, -distance, distance), glm::vec3(distance, -distance, distance),
+		glm::vec3(-distance, -distance, -distance), glm::vec3(distance, -distance, distance), glm::vec3(distance, -distance, -distance)
 	};
 
 	// then push back a null normal for each vertex
 	for (auto& v : vertices) 
 	{
-		normals.push_back(Vertex(0.0, 0.0, 0.0));
+		normals.push_back(glm::vec3(0.0, 0.0, 0.0));
 	}
 }
 
 // returns the cubemaps texture ID
-GPU_ID Skybox::getTextureID()
+GLuint Skybox::getTextureID()
 {
 	return cubemap_texture->getID();
 }
 
 // returns the ID for the mesh
-GPU_ID Skybox::getDataID()
+GLuint Skybox::getDataID()
 {
 	return cubemap_object_mesh->getID();
 }

@@ -66,7 +66,7 @@ void Model::setModel(ModelAsset * assets)
 		// then loop through and transfer each textures data to the gpu
 		for (int i = 0; i < textures.size(); i++) 
 		{
-			GPU_Sampler * texture = new GPU_Sampler(SINGLE_SAMPLER);
+			GPU_Sampler * texture = new GPU_Sampler(SamplerType::SingleSampler);
 
 			TextureAsset * texture_asset = textures[i];
 			texture->setTransferQuality(GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);

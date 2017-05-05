@@ -102,7 +102,7 @@ private:
 	// The transfer object for the quad (used for the final image)
 	GPU_Transfer * quad;
 	// our UBO light ID
-	GPU_ID lID;
+	GLuint lID;
 private:
 	// This is our vector of point lights for the scene
 	std::vector<PointLight> pointLights;

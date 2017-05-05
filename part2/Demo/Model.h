@@ -37,7 +37,7 @@ class Model
 {
 private:
 	// a vector of IDs for the textures
-	std::vector<GPU_ID> tIDs;
+	std::vector<GLuint> tIDs;
 	// The model asset file
 	ModelAsset * file;
 	// the transfer for the vertices etc

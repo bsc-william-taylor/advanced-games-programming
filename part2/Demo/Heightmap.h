@@ -35,8 +35,8 @@
 // The struct which represents a surface in the heightmap
 struct HeightmapSurface 
 {
-	std::vector<Vertex> vertices;
-	Vertex normal;
+	std::vector<glm::vec3> vertices;
+	glm::vec3 normal;
 };
 
 enum class SIDE;
@@ -50,7 +50,7 @@ private:
 	// The transfer for the heightmap mesh
 	GPU_Transfer * mesh;
 	// The number of vertices inside in mesh
-	GPU_ID vertexCount;
+	GLuint vertexCount;
 public:
 	// Constructor & Deconstructor
 	Heightmap();
@@ -78,16 +78,16 @@ private:
 	// a 2D vector of terrain heights
 	std::vector<std::vector<float>> terrain_heights;
 	// a vector of normals
-	std::vector<Vertex> vn;
+	std::vector<glm::vec3> vn;
 	// the size of the heightmap as a 2D vector
 	glm::vec2 size;
 
 	// returns the connected face
 	HeightmapSurface * getFace(SIDE side, GLuint x, GLuint b, GLuint size);
 	// returns the normal for a surface
-	Vertex getSurfaceNormal(glm::vec3 v1, glm::vec3 v2, glm::vec3 v3);
+	glm::vec3 getSurfaceNormal(glm::vec3 v1, glm::vec3 v2, glm::vec3 v3);
 	// averages the normals across the heightmaps surface
-	GLvoid averageNormals(std::vector<Vertex>& vertices);
+	GLvoid averageNormals(std::vector<glm::vec3>& vertices);
 };
 
 #endif

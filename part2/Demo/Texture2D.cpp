@@ -46,7 +46,7 @@ void Texture2D::setTexture(TextureAsset * asset)
 	if (asset != NULL)
 	{
 		// Create a single sampler object
-		texture = new GPU_Sampler(SINGLE_SAMPLER);
+		texture = new GPU_Sampler(SamplerType::SingleSampler);
 		// then pass the texture data ready for transfer
 		texture->setBitmapData(asset->getPixels(),
 			asset->getWidth(),
@@ -64,15 +64,15 @@ void Texture2D::setTexture(TextureAsset * asset)
 void Texture2D::setArea(glm::vec4 size)
 {
 	// First create the list of vertices needed
-	Vertices vert = {
-		Vertex(size[0], size[1] + size[3], 0.1), Vertex(size[0] + size[2], size[1] + size[3], 0.1), Vertex(size[0] + size[2], size[1], 0.1),
-		Vertex(size[0], size[1] + size[3], 0.1), Vertex(size[0], size[1], 0.1), Vertex(size[0] + size[2], size[1], 0.1),
+	std::vector<glm::vec3> vert = {
+		glm::vec3(size[0], size[1] + size[3], 0.1), glm::vec3(size[0] + size[2], size[1] + size[3], 0.1), glm::vec3(size[0] + size[2], size[1], 0.1),
+		glm::vec3(size[0], size[1] + size[3], 0.1), glm::vec3(size[0], size[1], 0.1), glm::vec3(size[0] + size[2], size[1], 0.1),
 	};
 
 	// Then the list of uv coords for bounding the texture
-	Vertices uvs = {
-		Vertex(0.0, 0.0, 0.0), Vertex(1.0, 0.0, 0.0), Vertex(1.0, 1.0, 0.0),
-		Vertex(0.0, 0.0, 0.0), Vertex(0.0, 1.0, 0.0), Vertex(1.0, 1.0, 0.0),
+	std::vector<glm::vec3> uvs = {
+		glm::vec3(0.0, 0.0, 0.0), glm::vec3(1.0, 0.0, 0.0), glm::vec3(1.0, 1.0, 0.0),
+		glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 1.0, 0.0), glm::vec3(1.0, 1.0, 0.0),
 	};
 
 	// Then transfer the vertices and uvs to the GPU ready for drawing
@@ -83,13 +83,13 @@ void Texture2D::setArea(glm::vec4 size)
 }
 
 // returns the texture ID for the texture
-GPU_ID Texture2D::getTextureID()
+GLuint Texture2D::getTextureID()
 {
 	return texture->getID();
 }
 
 // returns the object ID for the vertex data
-GPU_ID Texture2D::getDataID()
+GLuint Texture2D::getDataID()
 {
 	return transfer->getID();
 }

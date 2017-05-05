@@ -46,7 +46,7 @@ void Text2D::setFont(FontAsset * asset, const char * text)
 
 		// and then generate the texture and send the data to the GPU
 		SDL_Surface * surface = asset->generateTexture();
-		texture = new GPU_Sampler(SINGLE_SAMPLER);
+		texture = new GPU_Sampler(SamplerType::SingleSampler);
 		texture->setBitmapData(surface->pixels,
 			surface->w, surface->h,
 			surface->format->BytesPerPixel,
@@ -104,15 +104,15 @@ void Text2D::setArea(glm::vec2 size, ALIGNMENT align)
 void Text2D::setArea(glm::vec2 size)
 {
 	// create the list of vertices needed
-	Vertices vert = {
-		Vertex(size[0], size[1] + height, 0.1), Vertex(size[0] + width, size[1] + height, 0.1), Vertex(size[0] + width, size[1], 0.1),
-		Vertex(size[0], size[1] + height, 0.1), Vertex(size[0], size[1], 0.1), Vertex(size[0] + width, size[1], 0.1),
+	std::vector<glm::vec3> vert = {
+		glm::vec3(size[0], size[1] + height, 0.1), glm::vec3(size[0] + width, size[1] + height, 0.1), glm::vec3(size[0] + width, size[1], 0.1),
+		glm::vec3(size[0], size[1] + height, 0.1), glm::vec3(size[0], size[1], 0.1), glm::vec3(size[0] + width, size[1], 0.1),
 	};
 
 	// create the list of uvs needed
-	Vertices uvs = {
-		Vertex(0.0, 0.0, 0.0), Vertex(1.0, 0.0, 0.0), Vertex(1.0, 1.0, 0.0),
-		Vertex(0.0, 0.0, 0.0), Vertex(0.0, 1.0, 0.0), Vertex(1.0, 1.0, 0.0),
+	std::vector<glm::vec3> uvs = {
+		glm::vec3(0.0, 0.0, 0.0), glm::vec3(1.0, 0.0, 0.0), glm::vec3(1.0, 1.0, 0.0),
+		glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 1.0, 0.0), glm::vec3(1.0, 1.0, 0.0),
 	};
 
 	// then send the data over once
@@ -126,13 +126,13 @@ void Text2D::setArea(glm::vec2 size)
 }
 
 // returns the ID for the texture
-GPU_ID Text2D::getTextureID()
+GLuint Text2D::getTextureID()
 {
 	return texture->getID();
 }
 
 // returns the ID for the vertex data
-GPU_ID Text2D::getDataID()
+GLuint Text2D::getDataID()
 {
 	return transfer->getID();
 }

@@ -56,9 +56,9 @@ void DeferredRenderer::createRenderer(int w, int h)
 	sphereAsset.grabFromFile("data/sphere.obj");
 
 	// create a list of vertices for the quad which we need for the final image
-	Vertices area = {
-		Vertex(-1.0, -1.0, 0.0), Vertex(-1.0, 1.0, 0.0), Vertex(1.0, 1.0, 0.0),
-		Vertex(-1.0, -1.0, 0.0), Vertex(1.0, -1.0, 0.0), Vertex(1.0, 1.0, 0.0)
+	std::vector<glm::vec3> area = {
+		glm::vec3(-1.0, -1.0, 0.0), glm::vec3(-1.0, 1.0, 0.0), glm::vec3(1.0, 1.0, 0.0),
+		glm::vec3(-1.0, -1.0, 0.0), glm::vec3(1.0, -1.0, 0.0), glm::vec3(1.0, 1.0, 0.0)
 	};
 
 	// create the gpu transfer object for the quad 
@@ -232,7 +232,7 @@ void DeferredRenderer::present()
 	secondPassShader.getProgram()->setMatrix("view", glm::value_ptr(view));
 	secondPassShader.getProgram()->setInteger("lightPass", 0);
 	secondPassShader.prepare(quad->getID());
-	secondPassShader.run(QUAD);
+	secondPassShader.run((int)Geometry::Quad);
 
 	// then call this method which will copy the final image into the frame buffer
 	gbuffer->stopFrame();
@@ -316,7 +316,7 @@ void DeferredRenderer::renderCube(Cube * cube)
 	{
 		// then just render the object
 		firstPassShader.prepare(cube->getDataID(), cube->getTextureID());
-		firstPassShader.run(CUBE);
+		firstPassShader.run((int)Geometry::Cube);
 	} 
 	else
 	{
@@ -450,7 +450,7 @@ void DeferredRenderer::renderSkybox(Skybox * skybox)
 
 		// and render the cubemap which will be the skybox
 		firstPassShader.prepare(skybox->getDataID());
-		firstPassShader.run(CUBE);
+		firstPassShader.run((int)Geometry::Cube);
 
 		// then unbind the map and re enable culling
 		glBindTexture(GL_TEXTURE_CUBE_MAP, NULL);

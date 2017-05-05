@@ -70,13 +70,13 @@ GLfloat Heightmap::getY(FIBITMAP * sprite, int _x, int _y, float scale_y)
 }
 
 // returns the textures ID
-GPU_ID Heightmap::getTexture()
+GLuint Heightmap::getTexture()
 { 
 	return texture->getID(); 
 }
 
 // returns the meshes ID
-GPU_ID Heightmap::getVertexID() 
+GLuint Heightmap::getVertexID() 
 { 
 	return mesh->getID(); 
 }
@@ -88,7 +88,7 @@ GLuint Heightmap::getVertexCount()
 }
 
 // calculates the normal for the surface
-Vertex Heightmap::getSurfaceNormal(glm::vec3 v1, glm::vec3 v2, glm::vec3 v3)
+glm::vec3 Heightmap::getSurfaceNormal(glm::vec3 v1, glm::vec3 v2, glm::vec3 v3)
 {
 	return glm::cross(v2 - v1, v3 - v1);
 }
@@ -132,7 +132,7 @@ HeightmapSurface * Heightmap::getFace(SIDE side, GLuint i, GLuint b, GLuint size
 }
 
 // averages the normals across the surface
-GLvoid Heightmap::averageNormals(std::vector<Vertex>& vertices)
+GLvoid Heightmap::averageNormals(std::vector<glm::vec3>& vertices)
 {
 	// for each surface in the surface
 	for (int i = 0; i < faces.size(); i++) 
@@ -197,13 +197,13 @@ void Heightmap::create(TextureAsset * file, std::string heightmapFilename, float
 	size = glm::vec2(textureWidth, textureHeight);
 
 	// Create the transfer objects
-	texture = new GPU_Sampler(SINGLE_SAMPLER);
+	texture = new GPU_Sampler(SamplerType::SingleSampler);
 	mesh = new GPU_Transfer();
 
 	// and create a vector which will list each vertex in the mesh
-	std::vector<Vertex> list;
+	std::vector<glm::vec3> list;
 	// and another which will list each uv cord
-	std::vector<Vertex> uvs;
+	std::vector<glm::vec3> uvs;
 
 	// then do some pre allocation of memory to be more efficient when filling the vectors
 	faces.reserve(textureWidth * textureHeight * 2);
@@ -243,35 +243,35 @@ void Heightmap::create(TextureAsset * file, std::string heightmapFilename, float
 			terrain_heights[i].push_back(heighest_height); 
 
 			// push back the calculated mesh vertices into the vector
-			list.push_back(Vertex(x,		heights[0], z - 1));
-			list.push_back(Vertex(x,		heights[1], z));
-			list.push_back(Vertex(x + 1,	heights[2], z));
-			list.push_back(Vertex(x,		heights[3], z - 1));
-			list.push_back(Vertex(x + 1,	heights[4], z));
-			list.push_back(Vertex(x + 1,	heights[5], z - 1));
+			list.push_back(glm::vec3(x,		heights[0], z - 1));
+			list.push_back(glm::vec3(x,		heights[1], z));
+			list.push_back(glm::vec3(x + 1,	heights[2], z));
+			list.push_back(glm::vec3(x,		heights[3], z - 1));
+			list.push_back(glm::vec3(x + 1,	heights[4], z));
+			list.push_back(glm::vec3(x + 1,	heights[5], z - 1));
 
 			// then push back the uv cords for that mesh
-			uvs.push_back(Vertex(0.0, 0.0, 0.0));
-			uvs.push_back(Vertex(0.0, 1.0, 0.0));
-			uvs.push_back(Vertex(1.0, 1.0, 0.0));
-			uvs.push_back(Vertex(0.0, 0.0, 0.0));
-			uvs.push_back(Vertex(1.0, 1.0, 0.0));
-			uvs.push_back(Vertex(1.0, 0.0, 0.0));
+			uvs.push_back(glm::vec3(0.0, 0.0, 0.0));
+			uvs.push_back(glm::vec3(0.0, 1.0, 0.0));
+			uvs.push_back(glm::vec3(1.0, 1.0, 0.0));
+			uvs.push_back(glm::vec3(0.0, 0.0, 0.0));
+			uvs.push_back(glm::vec3(1.0, 1.0, 0.0));
+			uvs.push_back(glm::vec3(1.0, 0.0, 0.0));
 		
 			// nor we create a new heightmap surface and get its surface normals
 			auto surface = new HeightmapSurface();
-			auto v1 = getSurfaceNormal(Vertex(x, heights[0], z - 1), Vertex(x, heights[1], z), Vertex(x + 1, heights[2], z));
-			auto v2 = getSurfaceNormal(Vertex(x, heights[3], z - 1), Vertex(x + 1, heights[4], z), Vertex(x + 1, heights[5], z - 1));
+			auto v1 = getSurfaceNormal(glm::vec3(x, heights[0], z - 1), glm::vec3(x, heights[1], z), glm::vec3(x + 1, heights[2], z));
+			auto v2 = getSurfaceNormal(glm::vec3(x, heights[3], z - 1), glm::vec3(x + 1, heights[4], z), glm::vec3(x + 1, heights[5], z - 1));
 
 			// we then back it into the faces array
 			surface->normal = v1 + v2;
 			surface->vertices = { 
-				Vertex(x,		heights[0],		z - 1),
-				Vertex(x,		heights[1],		z),
-				Vertex(x + 1,	heights[2],		z),
-				Vertex(x,		heights[3],		z - 1),
-				Vertex(x + 1,	heights[4],		z),
-				Vertex(x + 1,	heights[5],		z - 1)
+				glm::vec3(x,		heights[0],		z - 1),
+				glm::vec3(x,		heights[1],		z),
+				glm::vec3(x + 1,	heights[2],		z),
+				glm::vec3(x,		heights[3],		z - 1),
+				glm::vec3(x + 1,	heights[4],		z),
+				glm::vec3(x + 1,	heights[5],		z - 1)
 			};
 
 			faces[i].push_back(surface);

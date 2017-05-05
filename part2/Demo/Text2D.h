@@ -60,9 +60,9 @@ public:
 	void setArea(glm::vec2 size);
 
 	// returns the ID for the texts texture
-	GPU_ID getTextureID();
+	GLuint getTextureID();
 	// returns the ID for the vertex data
-	GPU_ID getDataID();
+	GLuint getDataID();
 };
 
 #endif

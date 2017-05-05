@@ -2,7 +2,11 @@
 #pragma once
 
 #include "System.h"
-#include "HLGI.h"
+#include "DeferredRenderer.h"
+#include "Heightmap.h"
+#include "Button2D.h"
+#include "Renderer2D.h"
+#include "Model.h"
 
 class Level : public Scene
 {

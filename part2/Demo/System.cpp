@@ -39,7 +39,7 @@ bool OperatingSystem::setupLibraries()
 
 bool OperatingSystem::meetsMininumSpecification()
 {
-    return (GPU(false).has(OPENGL, 3.3));
+    return (GPU(false).has(GraphicsApi::OpenGL, 3.3));
 }
 
 void OperatingSystem::releaseLibraries()

@@ -54,16 +54,16 @@ public:
 	void setDistance(float distance);
 
 	// returns the ID for cubemap texture
-	GPU_ID getTextureID();
+	GLuint getTextureID();
 	// returns the ID for mesh data
-	GPU_ID getDataID();
+	GLuint getDataID();
 private:
 	// The vertices for the cube
-	Vertices vertices;
+	std::vector<glm::vec3> vertices;
 	// The normals for the cube
-	Vertices normals;
+	std::vector<glm::vec3> normals;
 	// The uvs for the cube
-	Vertices uvs;
+	std::vector<glm::vec3> uvs;
 
 	// the distance to render it at
 	GLfloat distance;

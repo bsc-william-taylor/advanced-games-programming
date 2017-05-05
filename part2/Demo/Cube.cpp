@@ -46,7 +46,7 @@ void Cube::setTexture(TextureAsset * asset)
 	if (asset != NULL)
 	{
 		// load the texture data from the asset
-		texture = new GPU_Sampler(SINGLE_SAMPLER);
+		texture = new GPU_Sampler(SamplerType::SingleSampler);
 		texture->setTransferQuality(GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
 		texture->setBitmapData(asset->getPixels(),
 			asset->getWidth(),
@@ -78,7 +78,7 @@ void Cube::setArea(glm::vec3 position, glm::vec3 size, int r)
 		glm::vec3 p = position;
 
 		// The create the list of vertices for the cube
-		Vertices vert = {
+		std::vector<glm::vec3> vert = {
 			glm::vec3(p[0], p[1], p[2]), glm::vec3(p[0], s[1], p[2]), glm::vec3(s[0], s[1], p[2]),
 			glm::vec3(p[0], p[1], p[2]), glm::vec3(s[0], p[1], p[2]), glm::vec3(s[0], s[1], p[2]),
 			glm::vec3(p[0], p[1], s[2]), glm::vec3(p[0], s[1], s[2]), glm::vec3(s[0], s[1], s[2]),
@@ -94,7 +94,7 @@ void Cube::setArea(glm::vec3 position, glm::vec3 size, int r)
 		};
 
 		// The create the list of normals for the cube
-		Vertices normals = {
+		std::vector<glm::vec3> normals = {
 			glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0),
 			glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0),
 			glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0),
@@ -110,7 +110,7 @@ void Cube::setArea(glm::vec3 position, glm::vec3 size, int r)
 		};
 		
 		// The create the list of uvs for the cube
-		Vertices uv_cords = {
+		std::vector<glm::vec3> uv_cords = {
 			glm::vec3(0.0*r, 0.0*r, 0.0), glm::vec3(0.0*r, 0.0*r, 0.0), glm::vec3(0.0*r, 0.0*r, 0.0),
 			glm::vec3(0.0*r, 0.0*r, 0.0), glm::vec3(0.0*r, 0.0*r, 0.0), glm::vec3(0.0*r, 0.0*r, 0.0),
 			glm::vec3(0.0*r, 0.0*r, 0.0), glm::vec3(0.0*r, 0.0*r, 0.0), glm::vec3(0.0*r, 0.0*r, 0.0),
@@ -135,13 +135,13 @@ void Cube::setArea(glm::vec3 position, glm::vec3 size, int r)
 }
 
 // returns the ID for the cubes texture
-GPU_ID Cube::getTextureID()
+GLuint Cube::getTextureID()
 {
 	return transfer->getID();
 }
 
 // returns the ID for the cubes vertices, normals etc
-GPU_ID Cube::getDataID()
+GLuint Cube::getDataID()
 {
 	return texture->getID();
 }
