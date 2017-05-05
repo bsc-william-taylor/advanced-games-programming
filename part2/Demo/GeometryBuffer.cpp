@@ -105,7 +105,7 @@ void GeometryBuffer::setupGeometryBuffer(int w, int h)
 	// if not throw an exception
 	if (Status != GL_FRAMEBUFFER_COMPLETE)
 	{
-		throw Error(RENDERER, "couldnt construct framebuffer object");
+		throw Error(ErrorType::Renderer, "couldnt construct framebuffer object");
 	}
 
 	// Then bind the default framebuffer

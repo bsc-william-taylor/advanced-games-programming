@@ -271,9 +271,6 @@
     <ClInclude Include="Framework.h">
       <Filter>Framework</Filter>
     </ClInclude>
-    <ClInclude Include="Main.h">
-      <Filter>Entry</Filter>
-    </ClInclude>
     <ClInclude Include="Menu.h">
       <Filter>Entry\Menu</Filter>
     </ClInclude>

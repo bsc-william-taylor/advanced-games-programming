@@ -1,88 +1,54 @@
-/**
- * 
- * Copyright (c) 2014 : William Taylor : wi11berto@yahoo.co.uk
- *  
- * This software is provided 'as-is', without any 
- * express or implied warranty. In no event will 
- * the authors be held liable for any damages 
- * arising from the use of this software.
- * 
- * Permission is granted to anyone to use this software for any purpose, 
- * including commercial applications, and to alter it and redistribute 
- * it freely, subject to the following restrictions:
- * 
- * 1. The origin of this software must not be misrepresented; 
- *    you must not claim that you wrote the original software. 
- *    If you use this software in a product, an acknowledgment 
- *    in the product documentation would be appreciated but 
- *    is not required.
- * 
- * 2. Altered source versions must be plainly marked as such, 
- *    and must not be misrepresented as being the original software.
- *  
- * 3. This notice may not be removed or altered from any source distribution.
- */
 
 #include "Exception.h"
 
-// Constructor & Deconstructor
-Error::Error(SYSTEM_ERROR sys, std::string msg, SYSTEM_PROGRAMMER user)
+Error::Error(ErrorType sys, std::string msg, ErrorAuthor user)
 {
-	// set all the variables for the class
-	systemErrorLocation = sys;
-	ErrorsOwner = user;
-	error_message = msg;
+    errorType = sys;
+    errorAuthor = user;
+    errorMessage = msg;
 }
 
 Error::~Error() throw()
 {
 }
 
-// returns the message
 const char * Error::what()
 {
-	// create the message
-	static std::string message = "Error thrown by ";
+    static std::string message = "Error thrown by ";
 
-	// append the person that programmed that error into the message
-	switch (ErrorsOwner)
-	{
-		case WILLIAM: message += " William Taylor\n\nMessage ->";
-			break;
-	}
+    switch (errorAuthor)
+    {
+    case ErrorAuthor::William: message += " William Taylor\n\nMessage ->";
+        break;
+    }
 
-	// append the users message to the message
-	message.append(error_message.c_str());
-	// return it to the function
-	return(message.c_str());
+    message.append(errorMessage.c_str());
+    return(message.c_str());
 }
 
 const char * Error::title()
 {
-	/// calculate the title for the error window
-	static std::string title = "Error !!!";
+    static std::string title = "Error !!!";
 
-	// set the title based on error type
-	switch (systemErrorLocation)
-	{
-		case NETWORKING: title = "Networking error";
-			break;
-		case RENDERER: title = "Renderer error";
-			break;
-		case TEXTURE: title = "Texture error";
-			break;
-		case FILE_IO: title = "File_IO error";
-			break;
-		case WINDOW: title = "Window error";
-			break;
-		case AUDIO: title = "Audio error";
-			break;
-		case LABEL: title = "Label error";
-			break;
-		case GAME: title = "Game error";
-			break;
-	}
+    switch (errorType)
+    {
+    case ErrorType::Networking: title = "Networking error";
+        break;
+    case ErrorType::Renderer: title = "Renderer error";
+        break;
+    case ErrorType::Texture: title = "Texture error";
+        break;
+    case ErrorType::FileIO: title = "File_IO error";
+        break;
+    case ErrorType::Window: title = "Window error";
+        break;
+    case ErrorType::Audio: title = "Audio error";
+        break;
+    case ErrorType::Label: title = "Label error";
+        break;
+    case ErrorType::Game: title = "Game error";
+        break;
+    }
 
-	// return the title as a const char * (c style string)
-	return(title.c_str());
+    return(title.c_str());
 }

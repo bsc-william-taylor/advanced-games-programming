@@ -64,7 +64,7 @@ void Text2D::setFont(FontAsset * asset, const char * text)
 	}
 	else
 	{
-		throw Error(RENDERER, "Null asset passed to Text2D class");
+		throw Error(ErrorType::Renderer, "Null asset passed to Text2D class");
 	}
 }
 

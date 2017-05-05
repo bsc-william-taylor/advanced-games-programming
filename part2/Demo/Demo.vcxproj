@@ -153,7 +153,6 @@ xcopy /Y $(SolutionDir)..\lib\Assimp\Assimp32.dll $(OutDir)</Command>
     <ClInclude Include="GeometryBuffer.h" />
     <ClInclude Include="Heightmap.h" />
     <ClInclude Include="Level.h" />
-    <ClInclude Include="Main.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Exception.h" />
     <ClInclude Include="FontAsset.h" />

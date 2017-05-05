@@ -78,7 +78,7 @@ void OrthoShader::compile()
 		if (!program->compile())
 		{
 			// throw an exception
-			throw Error(RENDERER, "couldnt compile ortho shader");
+			throw Error(ErrorType::Renderer, "couldnt compile ortho shader");
 		}
 	}
 }

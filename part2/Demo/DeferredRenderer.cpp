@@ -321,7 +321,7 @@ void DeferredRenderer::renderCube(Cube * cube)
 	else
 	{
 		// else throw an exception that indicates the error
-		throw Error(RENDERER, "Error you tried to render a null cube pointer", WILLIAM);
+		throw Error(ErrorType::Renderer, "Error you tried to render a null cube pointer");
 	}
 }
 
@@ -337,7 +337,7 @@ void DeferredRenderer::renderMap(Heightmap * heightmap)
 	else
 	{
 		// else throw an exception that indicates the error
-		throw Error(RENDERER, "Error you tried to render a null map pointer", WILLIAM);
+		throw Error(ErrorType::Renderer, "Error you tried to render a null map pointer");
 	}
 }
 
@@ -420,7 +420,7 @@ void DeferredRenderer::renderModel(Model * model)
 	else
 	{
 		// else through an exception to say the pointer isnt valid
-		throw Error(RENDERER, "Error you tried to render a null model pointer", WILLIAM);
+		throw Error(ErrorType::Renderer, "Error you tried to render a null model pointer");
 	}
 }
 
@@ -465,6 +465,6 @@ void DeferredRenderer::renderSkybox(Skybox * skybox)
 	else
 	{
 		// else through an exception to say the pointer isnt valid
-		throw Error(RENDERER, "Error you tried to render a null skybox pointer", WILLIAM);
+		throw Error(ErrorType::Renderer, "Error you tried to render a null skybox pointer");
 	}
 }

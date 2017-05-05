@@ -1,6 +1,5 @@
 
-
-#include "main.h"
+#include "Menu.h"
 
 Menu::Menu(OperatingSystem * system)
 {
@@ -19,13 +18,13 @@ Menu::~Menu()
 
 void Menu::onCreate()
 {
-    header.setFont(package->newFont("data/Aller_Rg", 150, { 255, 255, 255 }), "AGP Part 2 - B00235610");
+    header.setFont(package->getL("data/Aller_Rg", 150, { 255, 255, 255 }), "AGP Part 2 - B00235610");
     header.setArea(glm::vec2(1920 / 2, 900), ALIGNMENT::CENTER);
 
-    playDemoButton.setButtonText(package->newFont("data/Aller_Rg", 100, { 255, 255, 255 }), "Start tech demo");
+    playDemoButton.setButtonText(package->getL("data/Aller_Rg", 100, { 255, 255, 255 }), "Start tech demo");
     playDemoButton.setArea(glm::vec4(1920 / 2 - 250, 300, 500, 100), ALIGNMENT::CENTER);
 
-    background.setTexture(package->newTexture("data/background"));
+    background.setTexture(package->getT("data/background"));
     background.setArea(glm::vec4(0.0, 0.0, 1920, 1080));
 
     renderer2D.createRenderer();
@@ -35,7 +34,7 @@ void Menu::onGameEvent(SDL_Event& e)
 {
     if (playDemoButton.isPressed(e))
     {
-        scenes->switchScene((unsigned)SceneID::Level);
+        scenes->switchScene(1);
     }
 }
 

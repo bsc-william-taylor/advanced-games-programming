@@ -1,10 +1,9 @@
 
-#include "level.h"
-#include "main.h"
+#include "Level.h"
 
 Level::Level(OperatingSystem * engine)
 {
-    window = &engine->acquireWindow();
+    window = &engine->aquireWindow();
     package = engine->acquireAssetManager()->grabLocalManager();
     package->grab({
         "data/grass.png",
@@ -26,17 +25,17 @@ Level::~Level()
 
 void Level::onCreate()
 {
-    terrain.create(package->newTexture("data/grass"), "data/heightmap.png", 1.0, 12.5);
-    model.setModel(package->newModel("data/scheune"));
+    terrain.create(package->getT("data/grass"), "data/heightmap.png", 1.0, 12.5);
+    model.setModel(package->getM("data/scheune"));
 
     skybox.setDistance(500.0);
     skybox.createSkybox({
-        package->newTexture("data/front"),
-        package->newTexture("data/right"),
-        package->newTexture("data/back"),
-        package->newTexture("data/left"),
-        package->newTexture("data/top"),
-        package->newTexture("data/top")
+        package->getT("data/front"),
+        package->getT("data/right"),
+        package->getT("data/back"),
+        package->getT("data/left"),
+        package->getT("data/top"),
+        package->getT("data/top")
     });
 
     renderer2D.createRenderer();
@@ -49,10 +48,10 @@ void Level::onCreate()
     std::string labelText = "Features : Deferred rendering, multiple light types, heightmap generation, ";
     labelText += "light volumes and cubemaps";
 
-    header.setFont(package->newFont("data/Aller_Rg", 30, { 255, 255, 255 }), labelText.c_str());
+    header.setFont(package->getL("data/Aller_Rg", 30, { 255, 255, 255 }), labelText.c_str());
     header.setArea(glm::vec2(1900, 30), ALIGNMENT::LEFT);
 
-    switchButton.setButtonText(package->newFont("data/Aller_Rg", 40, { 255, 255, 255 }), "Randomize Lights");
+    switchButton.setButtonText(package->getL("data/Aller_Rg", 40, { 255, 255, 255 }), "Randomize Lights");
     switchButton.setArea(glm::vec4(10, 1030, 500, 200), ALIGNMENT::RIGHT);
 
     generateRandomLights();
