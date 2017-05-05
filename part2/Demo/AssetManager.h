@@ -11,5 +11,5 @@ public:
     AssetManager();
     ~AssetManager();
 
-    LocalAssetManager * grabLocalManager();
+    LocalAssetManager* grabLocalManager();
 };

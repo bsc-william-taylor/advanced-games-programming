@@ -15,7 +15,7 @@ public:
     Model();
     ~Model();
 
-    GLvoid setModel(ModelAsset * model);
+    GLvoid setModel(ModelAsset* model);
 
     GLuint getTextureIDs(int i);
     GLuint getVertexCount();

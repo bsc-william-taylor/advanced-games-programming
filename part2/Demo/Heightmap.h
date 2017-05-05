@@ -26,14 +26,14 @@ enum class Side
 
 class Heightmap
 {
-    std::vector<std::vector<HeightmapSurface *>> faces;
+    std::vector<std::vector<HeightmapSurface*>> faces;
     std::vector<std::vector<float>> terrain_heights;
     std::vector<glm::vec3> vn;
 
     Sampler* texture;
-    GLuint vertexCount;
     Transfer* mesh;
 
+    GLuint vertexCount;
     glm::vec2 size;
 public:
     Heightmap();
@@ -43,14 +43,14 @@ public:
     glm::vec3 getSurfaceNormal(glm::vec3 v1, glm::vec3 v2, glm::vec3 v3);
 
     GLvoid averageNormals(std::vector<glm::vec3>& vertices);
-    GLvoid create(TextureAsset * file, std::string, float _x, float _y);
+    GLvoid create(TextureAsset* file, std::string, float _x, float _y);
 
     GLuint getVertexCount();
     GLuint getVertexID();
     GLuint getTexture();
 
-    GLfloat getY(FIBITMAP * sprite, int x, int y, float scale_y);
+    GLfloat getY(FIBITMAP* sprite, int x, int y, float scale_y);
     GLfloat getHeightAt(int x, int y);
 
-    HeightmapSurface * getFace(Side side, GLuint x, GLuint b, GLuint size);
+    HeightmapSurface* getFace(Side side, GLuint x, GLuint b, GLuint size);
 };

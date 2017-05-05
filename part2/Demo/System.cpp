@@ -90,7 +90,7 @@ void OperatingSystem::executeProgram()
     }
 }
 
-Window& OperatingSystem::aquireWindow()
+Window& OperatingSystem::acquireWindow()
 {
     return windowManager;
 }

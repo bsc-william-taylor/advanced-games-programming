@@ -14,7 +14,7 @@ public:
     Texture2D();
     ~Texture2D();
 
-    void setTexture(TextureAsset * assets);
+    void setTexture(TextureAsset* assets);
     void setArea(glm::vec4 size);
 
     GLuint getTextureID();

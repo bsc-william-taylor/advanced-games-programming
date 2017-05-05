@@ -30,7 +30,7 @@ public:
     Error(ErrorType sys, std::string msg, ErrorAuthor user = ErrorAuthor::William);
     virtual ~Error() throw();
 
-    const char * title();
-    const char * what();
+    const char* title();
+    const char* what();
 
 };

@@ -24,7 +24,7 @@ public:
     Text2D();
     ~Text2D();
 
-    void setFont(FontAsset * text_font, const char * text);
+    void setFont(FontAsset* text_font, const char* text);
     void setArea(glm::vec2 size, Alignment textAlignment);
     void setArea(glm::vec2 size);
 

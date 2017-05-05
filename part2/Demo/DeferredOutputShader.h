@@ -30,5 +30,5 @@ public:
     void compile();
     void prepare(int ID);
     void run(int start, int end);
-    void run(int vertex_num);
+    void run(int vertexNum);
 };

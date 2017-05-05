@@ -17,7 +17,7 @@ class FirstPersonCamera : public Camera
     GLfloat height;
     GLint keys[4];
 public:
-    FirstPersonCamera(Camera *);
+    FirstPersonCamera(Camera*);
     FirstPersonCamera();
     ~FirstPersonCamera();
 

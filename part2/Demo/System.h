@@ -14,9 +14,9 @@ public:
     OperatingSystem();
     ~OperatingSystem();
 
-    SceneManager * acquireSceneManager();
-    AssetManager * acquireAssetManager();
-    Window& aquireWindow();
+    SceneManager* acquireSceneManager();
+    AssetManager* acquireAssetManager();
+    Window& acquireWindow();
 
     bool meetsMininumSpecification();
     bool setupLibraries();

@@ -13,11 +13,11 @@ public:
 
     Program * getProgram();
 
-    void prepare(int VAO, int textureID);
-    void prepare(int VAO);
+    void prepare(int vao, int textureID);
+    void prepare(int vao);
     void compile();
 
-    void run(int geometryType, int start_v, int end_v);
-    void run(int start_v, int end_v);
-    void run(int vertex_count);
+    void run(int geometryType, int startVertex, int endVertex);
+    void run(int startVertex, int endVertex);
+    void run(int vertexVount);
 };

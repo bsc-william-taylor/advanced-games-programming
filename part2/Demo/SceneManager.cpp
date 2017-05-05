@@ -41,7 +41,8 @@ void SceneManager::renderScene()
 
 void SceneManager::handeEventScene(SDL_Event& e)
 {
-    if (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE) {
+    if (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_ESCAPE) 
+    {
         SDL_Event exit;
         exit.type = SDL_QUIT;
         SDL_PushEvent(&exit);

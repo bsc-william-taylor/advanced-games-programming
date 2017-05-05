@@ -18,7 +18,7 @@ public:
 
     unsigned int grab(std::initializer_list<std::string>);
 
-    TextureAsset * getT(std::string filename);
-    ModelAsset * getM(std::string filename);
-    FontAsset * getL(std::string font, int, SDL_Color);
+    TextureAsset* getT(std::string filename);
+    ModelAsset* getM(std::string filename);
+    FontAsset* getL(std::string font, int, SDL_Color);
 };

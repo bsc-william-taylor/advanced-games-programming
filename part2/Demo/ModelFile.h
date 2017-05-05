@@ -10,7 +10,7 @@ using glm::vec3;
 
 class ModelAsset
 {
-    vector<TextureAsset *> textures;
+    vector<TextureAsset*> textures;
     vector<unsigned int> materialID;
     vector<unsigned int> meshLength;
     vector<vec3> vertices;
@@ -23,9 +23,9 @@ public:
     ModelAsset(std::string name);
     ~ModelAsset();
 
-    void grabFromFile(const char * filename);
+    void grabFromFile(const char* filename);
 
-    vector<TextureAsset *>& getTextures();
+    vector<TextureAsset*>& getTextures();
     vector<unsigned int>& getMaterialIDs();
     vector<vec3>& getVertices();
     vector<vec3>& getNormals();
@@ -36,7 +36,7 @@ public:
 
     std::string getName();
 private:
-    bool setupMaterials(const aiScene * scene, const std::string& filename);
-    bool setupFromScene(const aiScene * scene, const std::string& filename);
+    bool setupMaterials(const aiScene* scene, const std::string& filename);
+    bool setupFromScene(const aiScene* scene, const std::string& filename);
     bool setupMesh(unsigned int ID, const aiMesh * mesh);
 };

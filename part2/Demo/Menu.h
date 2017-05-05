@@ -18,7 +18,7 @@ class Menu : public Scene
     Button2D playDemoButton;
     Text2D header;
 public:
-    Menu(OperatingSystem * os);
+    Menu(OperatingSystem* os);
     ~Menu();
 
     void onGameEvent(SDL_Event& e);

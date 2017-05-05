@@ -11,7 +11,7 @@
 class Level : public Scene
 {
 private:
-    LocalAssetManager * package;
+    LocalAssetManager* package;
     DeferredRenderer renderer3D;
     Renderer2D renderer2D;
     Button2D switchButton;
@@ -21,7 +21,7 @@ private:
     Text2D header;
     Model model;
 public:
-    Level(OperatingSystem * os);
+    Level(OperatingSystem* os);
     ~Level();
 
     void generateRandomLights();

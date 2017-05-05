@@ -5,7 +5,7 @@
 
 void onApplicationStart(OperatingSystem * operatingSystem) 
 {
-    const auto window = &operatingSystem->aquireWindow();
+    const auto window = &operatingSystem->acquireWindow();
     window->setPosition(SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
     window->setTitle("AGP Part 2 - B00235610 - 49 Dynamic Point Lights 100+ FPS");
     window->setSize(1050, 650);

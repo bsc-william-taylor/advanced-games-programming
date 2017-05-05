@@ -15,15 +15,15 @@
 #include <cmath>
 #include <map>
 
-#include "SDL2\SDL.h"
+#include "SDL2/SDL.h"
 #include "glew/glew.h"
-#include "gl\gl.h"
+#include "gl/gl.h"
 #include "assimp/postprocess.h"    
 #include "assimp/Importer.hpp"          
 #include "assimp/scene.h"   
-#include "Freeimage\FreeImage.h"
-#include "SDL2\SDL_image.h"
-#include "SDL2\SDL_ttf.h"
+#include "Freeimage/FreeImage.h"
+#include "SDL2/SDL_image.h"
+#include "SDL2/SDL_ttf.h"
 #include "Exception.h"
 
 #pragma warning(disable : 4305)

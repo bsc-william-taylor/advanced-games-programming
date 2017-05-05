@@ -16,11 +16,11 @@ public:
     FontAsset(std::string name);
     ~FontAsset();
 
-    SDL_Surface * generateTexture();
+    SDL_Surface* generateTexture();
 
     void grabFromFile(std::string);
     void setColour(SDL_Color c);
-    void setText(const char *);
+    void setText(const char*);
     void openAtSize(int);
 
     std::string getName();

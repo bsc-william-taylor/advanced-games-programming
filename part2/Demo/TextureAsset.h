@@ -16,7 +16,7 @@ public:
     void grabFromFile(const char * filename);
     void* getPixels();
 
-    SDL_Surface * getSurface();
+    SDL_Surface* getSurface();
 
     int getHeight();
     int getWidth();

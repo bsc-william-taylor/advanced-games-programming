@@ -3,7 +3,7 @@
 
 Level::Level(OperatingSystem * engine)
 {
-    window = &engine->aquireWindow();
+    window = &engine->acquireWindow();
     package = engine->acquireAssetManager()->grabLocalManager();
     package->grab({
         "data/grass.png",
@@ -75,8 +75,8 @@ void Level::onUpdate()
 
 void Level::onRender()
 {
-    glm::mat4 projectionMatrix = glm::mat4();
-    glm::mat4 modelMatrix = glm::mat4();
+    auto projectionMatrix = glm::mat4();
+    auto modelMatrix = glm::mat4();
 
     projectionMatrix = glm::perspective(75.0f, 1920.0f / 1080.0f, 0.1f, 1000.0f);
 

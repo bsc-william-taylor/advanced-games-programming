@@ -25,20 +25,20 @@ public:
     Program();
     ~Program();
 
-    GLvoid setFragmentSource(const char * source);
-    GLvoid setVertexSource(const char * source);
-    GLvoid setMatrix(GLchar* nm, float * m);
-    GLvoid setVector(GLchar * name, glm::vec2 vec);
-    GLvoid setInteger(GLchar * name, int v);
+    GLvoid setFragmentSource(const char* source);
+    GLvoid setVertexSource(const char* source);
+    GLvoid setMatrix(GLchar* nm, float* m);
+    GLvoid setVector(GLchar* name, glm::vec2 vec);
+    GLvoid setInteger(GLchar* name, int v);
     GLvoid prepare(GLuint VAO);
     GLvoid bind(GLuint t_ID);
     GLvoid unbindShader();
     GLvoid bindShader();
     GLuint getID();
 
-    GLvoid run(GLuint shapeType, GLuint starting_vertex, GLuint number_of_vertices);
-    GLvoid run(GLuint starting_vertex, GLuint number_of_vertices);
-    GLvoid run(GLuint number_of_vertices);
+    GLvoid run(GLuint shapeType, GLuint startingVertex, GLuint vertexCount);
+    GLvoid run(GLuint startingVertex, GLuint vertexCount);
+    GLvoid run(GLuint vertexCount);
 
     GLboolean compile();
 };

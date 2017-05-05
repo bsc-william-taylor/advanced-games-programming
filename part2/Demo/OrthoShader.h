@@ -13,7 +13,7 @@ public:
 
 	Program* getProgram();
 
-	void prepare(int VAO_ID, int textureID);
+	void prepare(int vao, int textureID);
 	void compile();
 	void run(int num);
 };

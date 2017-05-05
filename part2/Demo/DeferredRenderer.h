@@ -25,8 +25,8 @@ class DeferredRenderer
     glm::vec3 lightPosition;
     glm::vec3 lightColour;
 
-    Transfer * sphere;
-    Transfer * quad;
+    Transfer* sphere;
+    Transfer* quad;
     GLuint lID;
 public:
     DeferredRenderer();
@@ -34,18 +34,18 @@ public:
 
     CameraType getCameraType();
 
-    void setMatrixForObject(const char *, glm::mat4&);
-    void handleTerrainHeight(Heightmap * heightmap);
+    void setMatrixForObject(const char*, glm::mat4&);
+    void handleTerrainHeight(Heightmap* heightmap);
     void setCameraPosition(glm::vec3 positions);
     void changeCamera(CameraType newCamera);
     void createRenderer(int width, int height);
     void updateCamera(SDL_Event& event);
     void repositionCamera();
     void pushLights(std::vector<PointLight>& pointLights);
-    void renderSkybox(Skybox * skybox);
-    void renderMap(Heightmap * map);
-    void renderModel(Model * model);
-    void renderCube(Cube *  cube);
+    void renderSkybox(Skybox* skybox);
+    void renderMap(Heightmap* map);
+    void renderModel(Model* model);
+    void renderCube(Cube*  cube);
     void constructUBO();
     void prepare();
     void present();
