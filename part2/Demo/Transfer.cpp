@@ -2,7 +2,7 @@
 
 #include "Transfer.h"
 
-GPU_Transfer::GPU_Transfer()
+Transfer::Transfer()
     : indices(NULL),
     hasSent(GL_FALSE)
 {
@@ -14,14 +14,14 @@ GPU_Transfer::GPU_Transfer()
     }
 }
 
-GPU_Transfer::~GPU_Transfer()
+Transfer::~Transfer()
 {
     glDeleteVertexArrays(1, &vertexArrayObject);
     for (int i = 0; i < (int)BufferIDs::Size; i++)
         objectIDs[i] ? glDeleteBuffers(1, &objectIDs[i]) : NULL;
 }
 
-GLuint GPU_Transfer::getID()
+GLuint Transfer::getID()
 {
     if (hasSent)
     {
@@ -33,12 +33,12 @@ GLuint GPU_Transfer::getID()
     }
 }
 
-GLuint GPU_Transfer::getIndexID()
+GLuint Transfer::getIndexID()
 {
     return objectIDs[(int)BufferIDs::IndicesID];
 }
 
-void GPU_Transfer::send()
+void Transfer::send()
 {
     glBindVertexArray(vertexArrayObject);
 
@@ -113,27 +113,27 @@ void GPU_Transfer::send()
     hasSent = GL_TRUE;
 }
 
-void GPU_Transfer::setVerticesColour(std::vector<glm::vec3>& data)
+void Transfer::setVerticesColour(std::vector<glm::vec3>& data)
 {
     objectData[(int)BufferIDs::ColourID] = &data;
 }
 
-void GPU_Transfer::setTextureCords(std::vector<glm::vec3>& data)
+void Transfer::setTextureCords(std::vector<glm::vec3>& data)
 {
     objectData[(int)BufferIDs::TextureID] = &data;
 }
 
-void GPU_Transfer::setVertices(std::vector<glm::vec3>& data)
+void Transfer::setVertices(std::vector<glm::vec3>& data)
 {
     objectData[(int)BufferIDs::VertexID] = &data;
 }
 
-GLvoid GPU_Transfer::setIndices(std::vector<GLuint>& data)
+GLvoid Transfer::setIndices(std::vector<GLuint>& data)
 {
     indices = &data;
 }
 
-void GPU_Transfer::setNormals(std::vector<glm::vec3>& data)
+void Transfer::setNormals(std::vector<glm::vec3>& data)
 {
     objectData[(int)BufferIDs::NormalID] = &data;
 }

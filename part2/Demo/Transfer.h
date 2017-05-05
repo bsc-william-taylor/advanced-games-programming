@@ -14,7 +14,7 @@ enum class BufferIDs
     Size
 };
 
-class GPU_Transfer
+class Transfer
 {
     GLuint vertexArrayObject;
     GLuint objectIDs[(int)BufferIDs::Size];
@@ -23,8 +23,8 @@ class GPU_Transfer
     std::vector<glm::vec3>* objectData[(int)BufferIDs::Size];
     std::vector<GLuint>* indices;
 public:
-    GPU_Transfer();
-    ~GPU_Transfer();
+    Transfer();
+    ~Transfer();
 
     GLvoid setVerticesColour(std::vector<glm::vec3>& colour);
     GLvoid setTextureCords(std::vector<glm::vec3>& coords);

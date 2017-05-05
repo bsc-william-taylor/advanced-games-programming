@@ -20,7 +20,7 @@ struct Bitmap
     GLvoid* data;
 };
 
-class GPU_Sampler
+class Sampler
 {
     std::vector<Bitmap*>  bitmaps;
     SamplerType samplerType;
@@ -33,8 +33,8 @@ class GPU_Sampler
 
     GLboolean hasSent;
 public:
-    GPU_Sampler(SamplerType type);
-    ~GPU_Sampler();
+    Sampler(SamplerType type);
+    ~Sampler();
 
     GLvoid setBitmapData(GLvoid*, GLuint, GLuint, GLuint, GLuint);
     GLvoid setBitmapWrapping(GLuint s, GLuint t);

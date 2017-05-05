@@ -19,10 +19,10 @@ Menu::~Menu()
 void Menu::onCreate()
 {
     header.setFont(package->getL("data/Aller_Rg", 150, { 255, 255, 255 }), "AGP Part 2 - B00235610");
-    header.setArea(glm::vec2(1920 / 2, 900), ALIGNMENT::CENTER);
+    header.setArea(glm::vec2(1920 / 2, 900), Alignment::Center);
 
     playDemoButton.setButtonText(package->getL("data/Aller_Rg", 100, { 255, 255, 255 }), "Start tech demo");
-    playDemoButton.setArea(glm::vec4(1920 / 2 - 250, 300, 500, 100), ALIGNMENT::CENTER);
+    playDemoButton.setArea(glm::vec4(1920 / 2 - 250, 300, 500, 100), Alignment::Center);
 
     background.setTexture(package->getT("data/background"));
     background.setArea(glm::vec4(0.0, 0.0, 1920, 1080));

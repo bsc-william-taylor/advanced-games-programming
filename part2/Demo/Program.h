@@ -15,15 +15,15 @@
     #error SRC : multiple definition
 #endif
 
-class GPU_Program
+class Program
 {
     GLboolean compiled;
     GLuint fragmentID;
     GLuint programID;
     GLuint vertexID;
 public:
-    GPU_Program();
-    ~GPU_Program();
+    Program();
+    ~Program();
 
     GLvoid setFragmentSource(const char * source);
     GLvoid setVertexSource(const char * source);

@@ -1,7 +1,7 @@
 
 #include "Program.h"
 
-GPU_Program::GPU_Program()
+Program::Program()
     : compiled(GL_TRUE)
 {
     programID = glCreateProgram();
@@ -9,14 +9,14 @@ GPU_Program::GPU_Program()
     vertexID = glCreateShader(GL_VERTEX_SHADER);
 }
 
-GPU_Program::~GPU_Program()
+Program::~Program()
 {
     glDeleteProgram(programID);
     glDeleteShader(fragmentID);
     glDeleteShader(vertexID);
 }
 
-void GPU_Program::setFragmentSource(const char * source)
+void Program::setFragmentSource(const char * source)
 {
     if (std::string(source).find(".glsl") == std::string::npos)
     {
@@ -60,7 +60,7 @@ void GPU_Program::setFragmentSource(const char * source)
     }
 }
 
-void GPU_Program::setVertexSource(const char * source)
+void Program::setVertexSource(const char * source)
 {
     if (std::string(source).find(".glsl") == std::string::npos)
     {
@@ -104,7 +104,7 @@ void GPU_Program::setVertexSource(const char * source)
     }
 }
 
-GLboolean GPU_Program::compile()
+GLboolean Program::compile()
 {
     if (compiled == GL_TRUE)
     {
@@ -116,61 +116,61 @@ GLboolean GPU_Program::compile()
     return compiled;
 }
 
-GLvoid GPU_Program::setVector(GLchar * nm, glm::vec2 v)
+GLvoid Program::setVector(GLchar * nm, glm::vec2 v)
 {
     GLuint ID = glGetUniformLocation(programID, nm);
     glUniform2fv(ID, 1, glm::value_ptr(v));
 }
 
-void GPU_Program::setMatrix(GLchar* nm, float * m)
+void Program::setMatrix(GLchar* nm, float * m)
 {
     GLuint ID = glGetUniformLocation(programID, nm);
     glUniformMatrix4fv(ID, 1, GL_FALSE, m);
 }
 
-void GPU_Program::bind(GLuint textureID)
+void Program::bind(GLuint textureID)
 {
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, textureID);
 }
 
-GLvoid GPU_Program::setInteger(GLchar * nm, int v)
+GLvoid Program::setInteger(GLchar * nm, int v)
 {
     GLuint ID = glGetUniformLocation(programID, nm);
     glUniform1i(ID, v);
 }
 
-void GPU_Program::prepare(GLuint objectID)
+void Program::prepare(GLuint objectID)
 {
     glBindVertexArray(objectID);
 }
 
-void GPU_Program::bindShader()
+void Program::bindShader()
 {
     glUseProgram(programID);
 }
 
-void GPU_Program::run(GLuint type, GLuint start, GLuint count)
+void Program::run(GLuint type, GLuint start, GLuint count)
 {
     glDrawArrays(type, start, count);
 }
 
-void GPU_Program::run(GLuint start, GLuint count)
+void Program::run(GLuint start, GLuint count)
 {
     run(GL_TRIANGLES, start, count);
 }
 
-void GPU_Program::run(GLuint count)
+void Program::run(GLuint count)
 {
     run(GL_TRIANGLES, 0, count);
 }
 
-GLuint GPU_Program::getID()
+GLuint Program::getID()
 {
     return programID;
 }
 
-void GPU_Program::unbindShader()
+void Program::unbindShader()
 {
     glUseProgram(NULL);
 }

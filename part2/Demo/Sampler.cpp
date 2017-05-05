@@ -1,7 +1,7 @@
 
 #include "Sampler.h"
 
-GPU_Sampler::GPU_Sampler(SamplerType type)
+Sampler::Sampler(SamplerType type)
     : samplerType(type)
 {
     min_filter = GL_LINEAR;
@@ -16,7 +16,7 @@ GPU_Sampler::GPU_Sampler(SamplerType type)
     }
 }
 
-GPU_Sampler::~GPU_Sampler()
+Sampler::~Sampler()
 {
     if (samplerType == SamplerType::SingleSampler)
     {
@@ -36,7 +36,7 @@ GPU_Sampler::~GPU_Sampler()
     }
 }
 
-GLvoid GPU_Sampler::send()
+GLvoid Sampler::send()
 {
     if (!bitmaps.empty())
     {
@@ -96,19 +96,19 @@ GLvoid GPU_Sampler::send()
     }
 }
 
-GLvoid GPU_Sampler::setBitmapWrapping(GLuint s, GLuint t)
+GLvoid Sampler::setBitmapWrapping(GLuint s, GLuint t)
 {
     wrap_s = s;
     wrap_t = t;
 }
 
-GLvoid GPU_Sampler::setTransferQuality(GLuint min, GLuint mag)
+GLvoid Sampler::setTransferQuality(GLuint min, GLuint mag)
 {
     min_filter = min;
     mag_filter = mag;
 }
 
-GLuint GPU_Sampler::getID()
+GLuint Sampler::getID()
 {
     if (hasSent)
     {
@@ -120,7 +120,7 @@ GLuint GPU_Sampler::getID()
     }
 }
 
-GLvoid GPU_Sampler::setBitmapData(GLvoid * data, GLuint w, GLuint h, GLuint bpp, GLuint bm)
+GLvoid Sampler::setBitmapData(GLvoid * data, GLuint w, GLuint h, GLuint bpp, GLuint bm)
 {
     auto bitmap = new Bitmap();
 

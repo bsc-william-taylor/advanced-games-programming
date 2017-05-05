@@ -41,7 +41,7 @@ void Level::onCreate()
     renderer2D.createRenderer();
 
     renderer3D.createRenderer(window->getWidth(), window->getHeight());
-    renderer3D.changeCamera(FIRST_PERSON);
+    renderer3D.changeCamera(CameraType::FirstPerson);
     renderer3D.setCameraPosition(glm::vec3(0.0, 2.0, -35.0));
     renderer3D.getLightPosition() = glm::vec3(0.0, -0.5, 1.0);
 
@@ -49,10 +49,10 @@ void Level::onCreate()
     labelText += "light volumes and cubemaps";
 
     header.setFont(package->getL("data/Aller_Rg", 30, { 255, 255, 255 }), labelText.c_str());
-    header.setArea(glm::vec2(1900, 30), ALIGNMENT::LEFT);
+    header.setArea(glm::vec2(1900, 30), Alignment::Left);
 
     switchButton.setButtonText(package->getL("data/Aller_Rg", 40, { 255, 255, 255 }), "Randomize Lights");
-    switchButton.setArea(glm::vec4(10, 1030, 500, 200), ALIGNMENT::RIGHT);
+    switchButton.setArea(glm::vec4(10, 1030, 500, 200), Alignment::Right);
 
     generateRandomLights();
 }

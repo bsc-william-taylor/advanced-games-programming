@@ -46,7 +46,7 @@ void Text2D::setFont(FontAsset * asset, const char * text)
 
 		// and then generate the texture and send the data to the GPU
 		SDL_Surface * surface = asset->generateTexture();
-		texture = new GPU_Sampler(SamplerType::SingleSampler);
+		texture = new Sampler(SamplerType::SingleSampler);
 		texture->setBitmapData(surface->pixels,
 			surface->w, surface->h,
 			surface->format->BytesPerPixel,
@@ -69,12 +69,12 @@ void Text2D::setFont(FontAsset * asset, const char * text)
 }
 
 // This function sets the area the text will be rendered into
-void Text2D::setArea(glm::vec2 size, ALIGNMENT align)
+void Text2D::setArea(glm::vec2 size, Alignment align)
 {
 	// but before calling the other set area we will re arrange the position to match the alignment
 	switch (align) 
 	{
-		case ALIGNMENT::CENTER:
+		case Alignment::Center:
 		{
 			glm::vec2 newSize(size);
 			newSize[0] -= width / 2;
@@ -83,7 +83,7 @@ void Text2D::setArea(glm::vec2 size, ALIGNMENT align)
 			break;
 		}
 		
-		case ALIGNMENT::LEFT:
+		case Alignment::Left:
 		{
 			glm::vec2 newSize(size);
 			newSize[0] -= width;
@@ -92,7 +92,7 @@ void Text2D::setArea(glm::vec2 size, ALIGNMENT align)
 			break;
 		}
 	
-		case ALIGNMENT::RIGHT:
+		case Alignment::Right:
 		{
 			setArea(size);
 			break;
@@ -118,7 +118,7 @@ void Text2D::setArea(glm::vec2 size)
 	// then send the data over once
 	if (!transfer)
 	{
-		transfer = new GPU_Transfer();
+		transfer = new Transfer();
 		transfer->setTextureCords(uvs);
 		transfer->setVertices(vert);
 		transfer->send();

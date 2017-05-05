@@ -11,24 +11,15 @@
     <Filter Include="Framework\Graphics">
       <UniqueIdentifier>{d0cbba92-2c54-4585-a034-2b2bd89b1dd8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Framework\Graphics\HLGI">
-      <UniqueIdentifier>{28c5ddba-a26f-4da5-9900-4780563c54dc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Framework\System">
       <UniqueIdentifier>{0ee160c4-4951-4570-8890-c4881349954b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Framework\Utilities">
       <UniqueIdentifier>{521d23e9-a979-4dab-b8da-5e1668b93b49}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Entry">
+    <Filter Include="Demo">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Entry\Menu">
-      <UniqueIdentifier>{24bedf0a-b846-4414-976b-cd18a5f12c14}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Entry\Level">
-      <UniqueIdentifier>{75b2ee07-4ef8-4ab6-821b-5196ddaf3d19}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -39,13 +30,7 @@
       <Filter>Framework\Loading</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
-      <Filter>Entry</Filter>
-    </ClCompile>
-    <ClCompile Include="Menu.cpp">
-      <Filter>Entry\Menu</Filter>
-    </ClCompile>
-    <ClCompile Include="Level.cpp">
-      <Filter>Entry\Level</Filter>
+      <Filter>Demo</Filter>
     </ClCompile>
     <ClCompile Include="Window.cpp">
       <Filter>Framework\System</Filter>
@@ -86,47 +71,53 @@
     <ClCompile Include="Transfer.cpp">
       <Filter>Framework\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Texture2D.cpp">
-      <Filter>Framework\Graphics\HLGI</Filter>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Demo</Filter>
     </ClCompile>
-    <ClCompile Include="Text2D.cpp">
-      <Filter>Framework\Graphics\HLGI</Filter>
-    </ClCompile>
-    <ClCompile Include="Skybox.cpp">
-      <Filter>Framework\Graphics\HLGI</Filter>
-    </ClCompile>
-    <ClCompile Include="Model.cpp">
-      <Filter>Framework\Graphics\HLGI</Filter>
-    </ClCompile>
-    <ClCompile Include="Heightmap.cpp">
-      <Filter>Framework\Graphics\HLGI</Filter>
-    </ClCompile>
-    <ClCompile Include="Cube.cpp">
-      <Filter>Framework\Graphics\HLGI</Filter>
+    <ClCompile Include="Level.cpp">
+      <Filter>Demo</Filter>
     </ClCompile>
     <ClCompile Include="Button2D.cpp">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>Framework\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="DefaultCamera.cpp">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="DeferredInputShader.cpp">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="DeferredOutputShader.cpp">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="DeferredRenderer.cpp">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="FirstPersonCamera.cpp">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
     </ClCompile>
-    <ClCompile Include="Renderer2D.cpp">
-      <Filter>Framework\Graphics\HLGI</Filter>
+    <ClCompile Include="Heightmap.cpp">
+      <Filter>Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Framework\Graphics</Filter>
     </ClCompile>
     <ClCompile Include="OrthoShader.cpp">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer2D.cpp">
+      <Filter>Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Skybox.cpp">
+      <Filter>Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Text2D.cpp">
+      <Filter>Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture2D.cpp">
+      <Filter>Framework\Graphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -138,12 +129,6 @@
     </ClInclude>
     <ClInclude Include="Framework.h">
       <Filter>Framework</Filter>
-    </ClInclude>
-    <ClInclude Include="Menu.h">
-      <Filter>Entry\Menu</Filter>
-    </ClInclude>
-    <ClInclude Include="Level.h">
-      <Filter>Entry\Level</Filter>
     </ClInclude>
     <ClInclude Include="Window.h">
       <Filter>Framework\System</Filter>
@@ -184,50 +169,56 @@
     <ClInclude Include="Transfer.h">
       <Filter>Framework\Graphics</Filter>
     </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Demo</Filter>
+    </ClInclude>
     <ClInclude Include="Texture2D.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
-    </ClInclude>
-    <ClInclude Include="Text2D.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
-    </ClInclude>
-    <ClInclude Include="Skybox.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
-    </ClInclude>
-    <ClInclude Include="Model.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
-    </ClInclude>
-    <ClInclude Include="Heightmap.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
-    </ClInclude>
-    <ClInclude Include="Cube.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Button2D.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="Camera.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Framework\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="DefaultCamera.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="DeferredInputShader.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="DeferredOutputShader.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="DeferredRenderer.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="FirstPersonCamera.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
     </ClInclude>
-    <ClInclude Include="Renderer2D.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
+    <ClInclude Include="Heightmap.h">
+      <Filter>Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Framework\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="OrthoShader.h">
-      <Filter>Framework\Graphics\HLGI</Filter>
+      <Filter>Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer2D.h">
+      <Filter>Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Skybox.h">
+      <Filter>Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Text2D.h">
+      <Filter>Framework\Graphics</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
