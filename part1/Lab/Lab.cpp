@@ -1,5 +1,5 @@
 
-#include "lab_main.h"
+#include "Lab.h"
 
 int main(int argc, char * argv[])
 {

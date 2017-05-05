@@ -89,10 +89,10 @@ xcopy /Y $(SolutionDir)..\lib\SDL2\SDL2_net.dll $(OutDir)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="lab_main.cpp" />
+    <ClCompile Include="Lab.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="lab_main.h" />
+    <ClInclude Include="Lab.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

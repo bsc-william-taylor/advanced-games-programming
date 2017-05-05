@@ -7,13 +7,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="lab_main.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="lab_main.h">
+    <ClInclude Include="Lab.h">
       <Filter>Source</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lab.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
