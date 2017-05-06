@@ -1,19 +1,17 @@
 
-#include "ResetEvent.h"
 #include "ScreenCollision.h"
+#include "ResetEvent.h"
 
-// Constructor & Deconstructor
-Reset_Event::Reset_Event(ScreenCollision * e)
-	: event(e)
-{ 
-}
-
-Reset_Event::~Reset_Event()
+GameResetEvent::GameResetEvent(ScreenCollision * e)
+    : event(e)
 {
 }
 
-void Reset_Event::onActivated(void * data)
+GameResetEvent::~GameResetEvent()
 {
-	// we just take the screen collision event and tell it to restart
-	event->restart();
+}
+
+void GameResetEvent::onActivated(void* data)
+{
+    event->restart();
 }

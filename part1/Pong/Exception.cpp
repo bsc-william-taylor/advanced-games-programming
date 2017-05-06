@@ -31,7 +31,7 @@ Error::Error(SYSTEM_ERROR sys, std::string msg, SYSTEM_PROGRAMMER user)
 	// set all the variables for the class
 	systemErrorLocation = sys;
 	exceptionsOwner = user;
-	error_message = msg;
+	errorMessage = msg;
 }
 
 Error::~Error() throw()
@@ -52,7 +52,7 @@ const char * Error::what()
 	}
 
 	// append the users message to the message
-	message.append(error_message.c_str());
+	message.append(errorMessage.c_str());
 	// return it to the function
 	return(message.c_str());
 }

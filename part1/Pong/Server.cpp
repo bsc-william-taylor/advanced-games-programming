@@ -111,7 +111,7 @@ bool Server::packetRecieved()
 			}
 
 			// set the hostname
-			client.host_name = std::string(host);
+			client.hostname = std::string(host);
 
 			// open a client socket
 			client.outSocket = SDLNet_UDP_Open(client.address.port);

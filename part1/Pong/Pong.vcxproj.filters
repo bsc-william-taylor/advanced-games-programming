@@ -104,9 +104,6 @@
     <ClCompile Include="XMLFile.cpp">
       <Filter>Framework\File &amp; IO</Filter>
     </ClCompile>
-    <ClCompile Include="tinyxml2.cpp">
-      <Filter>Framework\File &amp; IO</Filter>
-    </ClCompile>
     <ClCompile Include="Actor.cpp">
       <Filter>Framework\Drawables</Filter>
     </ClCompile>
@@ -134,17 +131,11 @@
     <ClCompile Include="EventManager.cpp">
       <Filter>Framework\Application</Filter>
     </ClCompile>
-    <ClCompile Include="TImeoutListener.cpp">
-      <Filter>Framework\Application</Filter>
-    </ClCompile>
     <ClCompile Include="CollisionListener.cpp">
       <Filter>Framework\Application</Filter>
     </ClCompile>
     <ClCompile Include="ButtonListener.cpp">
       <Filter>Framework\Application</Filter>
-    </ClCompile>
-    <ClCompile Include="highPrecisionTimer.cpp">
-      <Filter>Framework\Utilities</Filter>
     </ClCompile>
     <ClCompile Include="Music.cpp">
       <Filter>Framework\Utilities</Filter>
@@ -175,6 +166,15 @@
     </ClCompile>
     <ClCompile Include="TwoPlayerMap.cpp">
       <Filter>Game\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="HighPrecisionTimer.cpp">
+      <Filter>Framework\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeoutListener.cpp">
+      <Filter>Framework\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Tinyxml2.cpp">
+      <Filter>Framework\File &amp; IO</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -226,9 +226,6 @@
     <ClInclude Include="Exception.h">
       <Filter>Framework\Utilities</Filter>
     </ClInclude>
-    <ClInclude Include="CommonHeader.h">
-      <Filter>Framework\Utilities</Filter>
-    </ClInclude>
     <ClInclude Include="Networking.h">
       <Filter>Framework\Networking</Filter>
     </ClInclude>
@@ -242,9 +239,6 @@
       <Filter>Framework\Networking</Filter>
     </ClInclude>
     <ClInclude Include="XMLFile.h">
-      <Filter>Framework\File &amp; IO</Filter>
-    </ClInclude>
-    <ClInclude Include="tinyxml2.h">
       <Filter>Framework\File &amp; IO</Filter>
     </ClInclude>
     <ClInclude Include="Actor.h">
@@ -298,9 +292,6 @@
     <ClInclude Include="IListener.h">
       <Filter>Framework\Application</Filter>
     </ClInclude>
-    <ClInclude Include="highPrecisionTimer.h">
-      <Filter>Framework\Utilities</Filter>
-    </ClInclude>
     <ClInclude Include="Music.h">
       <Filter>Framework\Utilities</Filter>
     </ClInclude>
@@ -330,6 +321,15 @@
     </ClInclude>
     <ClInclude Include="TwoPlayerMap.h">
       <Filter>Game\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="HighPrecisionTimer.h">
+      <Filter>Framework\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Tinyxml2.h">
+      <Filter>Framework\File &amp; IO</Filter>
+    </ClInclude>
+    <ClInclude Include="MajorInclude.h">
+      <Filter>Framework\Utilities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

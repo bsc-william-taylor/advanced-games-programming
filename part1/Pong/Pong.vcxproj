@@ -125,7 +125,7 @@ xcopy /Y /I /S $(ProjectDir)Data $(OutDir)Data</Command>
     <ClCompile Include="EventManager.cpp" />
     <ClCompile Include="Exception.cpp" />
     <ClCompile Include="Game.cpp" />
-    <ClCompile Include="highPrecisionTimer.cpp" />
+    <ClCompile Include="HighPrecisionTimer.cpp" />
     <ClCompile Include="Label.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="PlayerBehavior.cpp" />
@@ -140,8 +140,8 @@ xcopy /Y /I /S $(ProjectDir)Data $(OutDir)Data</Command>
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="Statistics.cpp" />
     <ClCompile Include="Texture.cpp" />
-    <ClCompile Include="TImeoutListener.cpp" />
-    <ClCompile Include="tinyxml2.cpp" />
+    <ClCompile Include="TimeoutListener.cpp" />
+    <ClCompile Include="Tinyxml2.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="XMLFile.cpp" />
   </ItemGroup>
@@ -174,9 +174,9 @@ xcopy /Y /I /S $(ProjectDir)Data $(OutDir)Data</Command>
     <ClInclude Include="EventManager.h" />
     <ClInclude Include="Exception.h" />
     <ClInclude Include="Framework.h" />
-    <ClInclude Include="CommonHeader.h" />
+    <ClInclude Include="MajorInclude.h" />
     <ClInclude Include="Game.h" />
-    <ClInclude Include="highPrecisionTimer.h" />
+    <ClInclude Include="HighPrecisionTimer.h" />
     <ClInclude Include="ICollidable.h" />
     <ClInclude Include="IHandler.h" />
     <ClInclude Include="IListener.h" />
@@ -194,7 +194,7 @@ xcopy /Y /I /S $(ProjectDir)Data $(OutDir)Data</Command>
     <ClInclude Include="Statistics.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="TimeoutListener.h" />
-    <ClInclude Include="tinyxml2.h" />
+    <ClInclude Include="Tinyxml2.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="XMLFile.h" />
   </ItemGroup>
