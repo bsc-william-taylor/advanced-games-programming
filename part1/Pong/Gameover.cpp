@@ -27,19 +27,19 @@ void Gameover::onLoad(SceneManager&, Renderer& renderer)
     background.setPosition(0, 0, 1920, 1080);
 
     title.create(font, "Game Over", 150);
-    title.setPosition(1920 / 2, 150, CENTER);
+    title.setPosition(1920 / 2, 150, Alignment::CENTER);
 
     exit.createL(font, "Back", 100);
     exit.setPosition(50, 0, 200, 200);
     exit.onClick(this);
 
     winner.create(font, " ", 75);
-    winner.setPosition(1920 / 2, 500, CENTER);
+    winner.setPosition(1920 / 2, 500, Alignment::CENTER);
 
     score2.create(font, " ", 175);
     score1.create(font, " ", 175);
-    score2.setPosition(1670, 500, CENTER);
-    score1.setPosition(250, 500, CENTER);
+    score2.setPosition(1670, 500, Alignment::CENTER);
+    score1.setPosition(250, 500, Alignment::CENTER);
 
     click = bank->popItem<Music>("mouse_click_music");
 }
@@ -74,9 +74,9 @@ void Gameover::onUpdate(SceneManager& scenes, Renderer&)
         score1.create(font, player1ScoreString, 175);
         winner.create(font, winnerString, 200);
 
-        winner.setPosition(1920 / 2, 500, CENTER);
-        score2.setPosition(1670, 500, CENTER);
-        score1.setPosition(250, 500, CENTER);
+        winner.setPosition(1920 / 2, 500, Alignment::CENTER);
+        score2.setPosition(1670, 500, Alignment::CENTER);
+        score1.setPosition(250, 500, Alignment::CENTER);
     }
 }
 

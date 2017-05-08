@@ -34,14 +34,14 @@ void Label::setPosition(int x, int y, Alignment e)
     position = { x, y, surface->w, surface->h };
     switch (e)
     {
-    case CENTER:
+    case Alignment::CENTER:
     {
         position.x -= surface->w / 2;
         position.y -= surface->h / 2;
         break;
     }
 
-    case LEFT:
+    case Alignment::LEFT:
     {
         position.x -= surface->w / 2;
         break;

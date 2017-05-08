@@ -5,22 +5,22 @@
 
 Ball::Ball(Renderer * r, Bank * b)
 {
+    behaviour = new BallBehaviour(this, &sprite);
     position.resize(1);
     renderer = r;
     show = false;
     bank = b;
 
-    behaviour = new BallBehaviour(this, &sprite);
 }
 
 Ball::~Ball()
 {
-    delete(behaviour);
+    delete behaviour;
 }
 
 BallBehaviour * Ball::getBehaviour()
 {
-    return(behaviour);
+    return behaviour;
 }
 
 std::vector<SDL_Rect>& Ball::getPosition()
@@ -59,11 +59,11 @@ void Ball::create(SceneManager * mgr, Player * player1, Player * player2)
     actor.pushBehaviour(behaviour);
 
     listener.pushObjects(this, &screen, new ScreenCollision(mgr, bank->popItem<StatisticsFile>("save_file")));
-    player1_Collision.pushObjects(this, player1, new BlockCollision());
-    player2_Collision.pushObjects(this, player2, new BlockCollision());
+    playerOneCollision.pushObjects(this, player1, new BlockCollision());
+    playerTwoCollision.pushObjects(this, player2, new BlockCollision());
 
-    EventManager::get()->pushEventEntry(&player1_Collision);
-    EventManager::get()->pushEventEntry(&player2_Collision);
+    EventManager::get()->pushEventEntry(&playerOneCollision);
+    EventManager::get()->pushEventEntry(&playerTwoCollision);
     EventManager::get()->pushEventEntry(&listener);
 
     position[0] = sprite.getPosition();

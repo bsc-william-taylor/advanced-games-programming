@@ -18,7 +18,7 @@ public:
     AssetManager* acquireAssetManager();
     Window& acquireWindow();
 
-    bool meetsMininumSpecification();
+    bool meetsMinimumSpecification();
     bool setupLibraries();
 
     void releaseLibraries();

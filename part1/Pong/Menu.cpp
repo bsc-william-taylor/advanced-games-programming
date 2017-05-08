@@ -5,10 +5,10 @@
 Menu::Menu(Bank * bank)
 {
     title.create(font, "Traditional Pong", 250);
-    title.setPosition(1920 / 2, 150, CENTER);
+    title.setPosition(1920 / 2, 150, Alignment::CENTER);
 
     version.create(font, VERSION_STRING, 50);
-    version.setPosition(20, 1030, RIGHT);
+    version.setPosition(20, 1030, Alignment::RIGHT);
 
     this->bank = bank;
 }

@@ -8,7 +8,7 @@
 
 class Gameover : public Scene, public IHandler
 {
-    SceneManager * sceneManager;
+    SceneManager* sceneManager;
     Texture background;
     Button exit;
     Music* click;

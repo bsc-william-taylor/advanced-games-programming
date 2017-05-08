@@ -37,7 +37,7 @@ bool OperatingSystem::setupLibraries()
     return setupSuccess;
 }
 
-bool OperatingSystem::meetsMininumSpecification()
+bool OperatingSystem::meetsMinimumSpecification()
 {
     return (GPU(false).has(GraphicsApi::OpenGL, 3.3));
 }
@@ -59,7 +59,7 @@ void OperatingSystem::executeProgram()
 
     GPU gpu(true);
 
-    if (meetsMininumSpecification())
+    if (meetsMinimumSpecification())
     {
         sceneManager.createScenes();
 

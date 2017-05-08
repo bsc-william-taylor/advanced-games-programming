@@ -6,16 +6,16 @@
 
 class Display
 {
-	Label playerScore_1;
-	Label playerScore_2;
+    Label playerScoreOne;
+    Label playerScoreTwo;
 public:
-	Display();
-	~Display();
+    Display();
+    ~Display();
 
-	void render(Renderer&);
-	void create(Renderer&);
-	void update();
-	void enter();
+    void render(Renderer&);
+    void create(Renderer&);
+    void update();
+    void enter();
 
 public:
     static int player1;

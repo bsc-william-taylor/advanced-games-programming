@@ -8,7 +8,8 @@
 #include "Framework.h"
 #include "Screen.h"
 
-enum PLAYER_TYPE {
+enum PLAYER_TYPE
+{
     PLAYER_ONE,
     PLAYER_TWO
 };

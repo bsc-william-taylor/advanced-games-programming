@@ -27,7 +27,7 @@ void Multiplayer::onLoad(SceneManager&, Renderer& renderer)
     background.create(&renderer, "data/background.png");
     background.setPosition(0, 0, 1920, 1080);
     title.create(font, "Multiplayer", 300);
-    title.setPosition(1920 / 2, 200, CENTER);
+    title.setPosition(1920 / 2, 200, Alignment::CENTER);
 
     this->click = bank->popItem<Music>("mouse_click_music");
 
@@ -36,7 +36,7 @@ void Multiplayer::onLoad(SceneManager&, Renderer& renderer)
     player1.onClick(this);
 
     hostname.create(font, std::string("Your Hostname : ").append(getHostname()), 60);
-    hostname.setPosition(10, 1000, RIGHT);
+    hostname.setPosition(10, 1000, Alignment::RIGHT);
 
     player2.createL(font, "Player 2", 100);
     player2.setPosition(1060, 600, 200, 200);
@@ -86,7 +86,7 @@ void Multiplayer::onEvent(SceneManager& scenes, SDL_Event * e)
         }
 
         servername.create(font, name, 100);
-        servername.setPosition(1920 / 2, 500, CENTER);
+        servername.setPosition(1920 / 2, 500, Alignment::CENTER);
     }
 
     if (e->type == SDL_TEXTINPUT) {
@@ -98,7 +98,7 @@ void Multiplayer::onEvent(SceneManager& scenes, SDL_Event * e)
         name += e->text.text;
 
         servername.create(font, name, 100);
-        servername.setPosition(1920 / 2, 500, CENTER);
+        servername.setPosition(1920 / 2, 500, Alignment::CENTER);
     }
 
     player1.onEvent(e);
@@ -112,7 +112,7 @@ void Multiplayer::onEnter()
     name = "Type Opponents Hostname ...";
 
     servername.create(font, name, 100);
-    servername.setPosition(1920 / 2, 500, CENTER);
+    servername.setPosition(1920 / 2, 500, Alignment::CENTER);
 }
 
 void Multiplayer::onExit()

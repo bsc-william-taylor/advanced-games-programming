@@ -7,7 +7,7 @@
 const int BallResetDelay = 1500;
 const int PointsToWin = 10;
 
-ScreenCollision::ScreenCollision(SceneManager * scenes, StatisticsFile * stats) : 
+ScreenCollision::ScreenCollision(SceneManager * scenes, StatisticsFile * stats) :
     timeoutListener(new GameResetEvent(this), BallResetDelay),
     clip(Music("data/plop.wav", 50))
 {
@@ -71,9 +71,9 @@ void ScreenCollision::onActivated(void * data)
     if (!triggered)
         clip.play(0);
 
-    switch (info->indexTwo)
+    switch ((ScreenSide)info->indexTwo)
     {
-        case Screen::RIGHT:
+        case ScreenSide::RIGHT:
         {
             if (!triggered)
             {
@@ -86,7 +86,7 @@ void ScreenCollision::onActivated(void * data)
             break;
         }
 
-        case Screen::LEFT:
+        case ScreenSide::LEFT:
         {
             if (!triggered)
             {

@@ -14,26 +14,26 @@ Display::~Display()
 
 void Display::render(Renderer& renderer)
 {
-    renderer.renderLabel(&playerScore_1);
-    renderer.renderLabel(&playerScore_2);
+    renderer.renderLabel(&playerScoreOne);
+    renderer.renderLabel(&playerScoreTwo);
 }
 
 void Display::create(Renderer& renderer)
 {
-    playerScore_1.create(font, to_string(player1), 200);
-    playerScore_2.create(font, to_string(player2), 200);
+    playerScoreOne.create(font, to_string(player1), 200);
+    playerScoreTwo.create(font, to_string(player2), 200);
 
-    playerScore_1.setPosition(1920 / 2, 0, LEFT);
-    playerScore_2.setPosition(1920 / 2, 0, RIGHT);
+    playerScoreOne.setPosition(1920 / 2, 0, Alignment::LEFT);
+    playerScoreTwo.setPosition(1920 / 2, 0, Alignment::RIGHT);
 }
 
 void Display::update()
 {
-    playerScore_1.create(font, to_string(player1), 200);
-    playerScore_2.create(font, to_string(player2), 200);
+    playerScoreOne.create(font, to_string(player1), 200);
+    playerScoreTwo.create(font, to_string(player2), 200);
 
-    playerScore_1.setPosition(1920 / 2 - 115, 100, LEFT);
-    playerScore_2.setPosition(1920 / 2 + 100, 100, RIGHT);
+    playerScoreOne.setPosition(1920 / 2 - 115, 100, Alignment::LEFT);
+    playerScoreTwo.setPosition(1920 / 2 + 100, 100, Alignment::RIGHT);
 }
 
 void Display::enter()

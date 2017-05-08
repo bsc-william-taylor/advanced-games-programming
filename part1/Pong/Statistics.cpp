@@ -9,9 +9,9 @@ Statistics::Statistics(Bank * bank)
     bounceTitle.create(font, "Pong Bounces", 125);
     title.create(font, "Statistics", 150);
 
-    timesPlayedTitle.setPosition(1920 / 2 - 500, 500, CENTER);
-    bounceTitle.setPosition(1920 / 2 + 500, 500, CENTER);
-    title.setPosition(1920 / 2, 150, CENTER);
+    timesPlayedTitle.setPosition(1920 / 2 - 500, 500, Alignment::CENTER);
+    bounceTitle.setPosition(1920 / 2 + 500, 500, Alignment::CENTER);
+    title.setPosition(1920 / 2, 150, Alignment::CENTER);
 }
 
 Statistics::~Statistics()
@@ -64,10 +64,10 @@ void Statistics::onUpdate(SceneManager& scenes, Renderer&)
     if (timesPlayed.getText() != timesPlayedString || bounces.getText() != bouncesString)
     {
         timesPlayed.create(font, timesPlayedString, 200);
-        timesPlayed.setPosition(1920 / 2 - 500, 700, CENTER);
+        timesPlayed.setPosition(1920 / 2 - 500, 700, Alignment::CENTER);
 
         bounces.create(font, bouncesString, 200);
-        bounces.setPosition(1920 / 2 + 500, 700, CENTER);
+        bounces.setPosition(1920 / 2 + 500, 700, Alignment::CENTER);
     }
 }
 

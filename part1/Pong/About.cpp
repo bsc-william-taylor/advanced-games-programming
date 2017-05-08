@@ -26,17 +26,17 @@ void About::onLoad(SceneManager&, Renderer& renderer)
     background.setPosition(0, 0, 1920, 1080);
 
     title.create(font, "Credits", 150);
-    title.setPosition(1920 / 2, 150, CENTER);
+    title.setPosition(1920 / 2, 150, Alignment::CENTER);
 
     exit.createL(font, "Back", 100);
     exit.setPosition(50, 0, 200, 200);
     exit.onClick(this);
 
-    paragraph.setPosition(1920 / 2, 300, CENTER);
+    paragraph.setPosition(1920 / 2, 300, Alignment::CENTER);
     paragraph.setup(50, "data/about.xml", "about");
 
     email.create(font, "wi11berto@yahoo.co.uk", 30);
-    email.setPosition(20, 1030, RIGHT);
+    email.setPosition(20, 1030, Alignment::RIGHT);
 
     click = bank->popItem<Music>("mouse_click_music");
 }

@@ -3,7 +3,7 @@
 
 #include "MajorInclude.h"
 
-enum Alignment 
+enum class Alignment 
 {
 	CENTER, LEFT, RIGHT
 };

@@ -40,7 +40,7 @@ void Button::setPosition(int x, int y, int w, int h)
 
     if (label)
     {
-        label->setPosition(mdx, mdy, CENTER);
+        label->setPosition(mdx, mdy, Alignment::CENTER);
     }
 
     if (texture)

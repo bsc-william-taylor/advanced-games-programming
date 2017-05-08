@@ -28,17 +28,17 @@ void Controls::onLoad(SceneManager&, Renderer& renderer)
     background.setPosition(0, 0, 1920, 1080);
 
     title.create(font, "Controls", 150);
-    title.setPosition(1920 / 2, 150, CENTER);
+    title.setPosition(1920 / 2, 150, Alignment::CENTER);
 
     controls1.create(font, "W Key = Up", 125);
-    controls1.setPosition(500, 400, CENTER);
+    controls1.setPosition(500, 400, Alignment::CENTER);
     controls2.create(font, "S Key = Down", 125);
-    controls2.setPosition(500, 600, CENTER);
+    controls2.setPosition(500, 600, Alignment::CENTER);
 
     controls3.create(font, "Arrow Up = Up", 125);
-    controls3.setPosition(1400, 400, CENTER);
+    controls3.setPosition(1400, 400, Alignment::CENTER);
     controls4.create(font, "Arrow Down = Down", 125);
-    controls4.setPosition(1400, 600, CENTER);
+    controls4.setPosition(1400, 600, Alignment::CENTER);
 
     this->click = bank->popItem<Music>("mouse_click_music");
 

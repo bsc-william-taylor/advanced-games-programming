@@ -9,7 +9,8 @@
 global_string filename = "data/statistics.xml";
 global_string font = "data/MOZART_0.ttf";
 
-struct StatisticsData {
+struct StatisticsData
+{
     int bounces;
     int times;
 };

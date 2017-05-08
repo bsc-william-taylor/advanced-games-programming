@@ -15,12 +15,12 @@ class Ball : public ICollidable
     Texture sprite;
     Screen screen;
     Actor actor;
-    Bank * bank;
+    Bank* bank;
 
-    Collision player1_Collision;
-    Collision player2_Collision;
+    Collision playerOneCollision;
+    Collision playerTwoCollision;
     Collision listener;
-    Renderer * renderer;
+    Renderer* renderer;
     bool show;
 public:
     Ball(Renderer *, Bank *);

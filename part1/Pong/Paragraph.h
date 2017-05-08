@@ -9,7 +9,7 @@
 
 class Paragraph
 {
-    std::vector<Label *> lines;
+    std::vector<Label*> lines;
     std::string filename;
     Alignment align;
     int x, y;

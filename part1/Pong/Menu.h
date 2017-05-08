@@ -9,12 +9,18 @@
 
 class Menu : public Scene, public IHandler
 {
-    SceneManager * sceneManager;
+    SceneManager* sceneManager;
     Texture background;
-    Music * click;
-    Bank * bank;
+    Music* click;
+    Bank* bank;
 
-    Button multiplayer, stats, about, play1, play2, exit;
+    Button multiplayer;
+    Button stats;
+    Button about;
+    Button play1;
+    Button play2;
+    Button exit;
+
     Label version;
     Label title;
 public:

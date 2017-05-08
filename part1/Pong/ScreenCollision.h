@@ -10,8 +10,8 @@
 class ScreenCollision : public IHandler
 {
     TimeoutListener timeoutListener;
-    StatisticsFile * stats;
-    SceneManager * mgr;
+    StatisticsFile* stats;
+    SceneManager* mgr;
     Ball* ball;
     bool triggered;
     Music clip;
